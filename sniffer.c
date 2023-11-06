@@ -38,6 +38,22 @@ const char *payload; /* Packet payload */
 u_int size_ip;
 u_int size_tcp;
 
+/* ARP header */
+struct sniff_arp {
+    u_short ar_hrd;        /* format of hardware address (e.g., Ethernet) */
+    u_short ar_pro;        /* format of protocol address (e.g., IPv4) */
+    u_char ar_hln;         /* length of hardware address (Ethernet = 6) */
+    u_char ar_pln;         /* length of protocol address (IPv4 = 4) */
+    u_short ar_op;         /* ARP operation (e.g., request or reply) */
+    u_char ar_sha[6];      /* sender hardware address (MAC address) */
+    u_char ar_sip[4];      /* sender protocol address (IPv4 address) */
+    u_char ar_tha[6];      /* target hardware address (MAC address) */
+    u_char ar_tip[4];      /* target protocol address (IPv4 address) */
+    #define ARP_REQUEST 1
+    #define ARP_REPLY 2
+
+};
+
 /* IPv4 header */
 struct sniff_ipv4 {
 	u_char ip_vhl;		        /* version << 4 | header length >> 2 */
@@ -93,7 +109,6 @@ struct sniff_tcp {
 	u_short th_urp;		/* urgent pointer */
 };
 
-
 /* UDP header */
 struct sniff_udp {
     uint16_t uh_sport;   /* Source port */
@@ -103,30 +118,23 @@ struct sniff_udp {
 };
 
 void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *packet);
-
 void process_ipv6 (const struct sniff_ipv6 *ipv6);
-
 void process_ipv4 (const struct sniff_ipv4 *ipv4);
-
 void process_tcp (const struct sniff_tcp *tcp, int size_ip, int ip_len);
-
 void process_udp (const struct sniff_udp *udp, int ip_len);
+void process_arp(const struct sniff_arp *arp) ;
 
 /* callback function */
 void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *packet)
 {
-
 	static int count = 1;                   /* packet counter */
 
 	/* declare pointers to packet headers */
 	const struct sniff_ethernet *ethernet;  /* The ethernet header [1] */
 	const struct sniff_ipv4 *ipv4;              /* The IP header */
-	const struct sniff_ipv6 *ipv6; 
-    
-	const char *payload;                    /* Packet payload */
+	const struct sniff_ipv6 *ipv6;
+    const struct sniff_arp *arp;  
 
-	int size_ip;
-	
 
 	printf("\nPacket number %d:\n", count);
 	count++;
@@ -147,6 +155,8 @@ void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *pa
             break;
         case 0x0806:
             printf("ARP packet\n");
+            arp = (struct sniff_arp*)(packet + SIZE_ETHERNET);
+            process_arp(arp);
             break;
         case 0x86C6:
             printf("IPv6 Routing Header\n");
@@ -157,7 +167,6 @@ void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *pa
 
     return;
 }
-
 
 void process_ipv6 (const struct sniff_ipv6 *ipv6) {
 
@@ -239,6 +248,23 @@ void process_ipv4 (const struct sniff_ipv4 *ipv4) {
 
 }
 
+void process_arp(const struct sniff_arp *arp) {
+    printf("   ARP Request/Reply\n");
+    
+    if (ntohs(arp->ar_op) == ARP_REQUEST) {
+        printf("   Operation: Request\n");
+    } else if (ntohs(arp->ar_op) == ARP_REPLY) {
+        printf("   Operation: Reply\n");
+    } else {
+        printf("   Operation: Unknown\n");
+    }
+
+    printf("   Sender MAC Address: %02x:%02x:%02x:%02x:%02x:%02x\n", arp->ar_sha[0], arp->ar_sha[1], arp->ar_sha[2], arp->ar_sha[3], arp->ar_sha[4], arp->ar_sha[5]);
+    printf("   Sender IP Address: %d.%d.%d.%d\n", arp->ar_sip[0], arp->ar_sip[1], arp->ar_sip[2], arp->ar_sip[3]);
+    printf("   Target MAC Address: %02x:%02x:%02x:%02x:%02x:%02x\n", arp->ar_tha[0], arp->ar_tha[1], arp->ar_tha[2], arp->ar_tha[3], arp->ar_tha[4], arp->ar_tha[5]);
+    printf("   Target IP Address: %d.%d.%d.%d\n", arp->ar_tip[0], arp->ar_tip[1], arp->ar_tip[2], arp->ar_tip[3]);
+}
+
 void process_tcp (const struct sniff_tcp *tcp, int size_ip, int ip_len) {
     int size_tcp;
 	int size_payload;
@@ -291,7 +317,6 @@ void process_udp(const struct sniff_udp *udp, int ip_len) {
 		print_payload(payload, size_payload);
 	}
 }
-
 
 int main(int argc, char *argv[])
 {
@@ -377,7 +402,6 @@ int main(int argc, char *argv[])
     pcap_close(handle);
 
     printf("\nCapture complete.\n");
-
 
 	return(0);
 }
