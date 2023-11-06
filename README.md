@@ -25,7 +25,7 @@ You can run the program from the command line using the following options:
 - 
 Example:
 ```bash
-./packet_capture -i eth0 -s 1500 -n 50 -f "port 80"
+./sniffer -i eth0 -s 1500 -n 50 -f "port 80"
 ```
 
 ## Requirements
@@ -36,7 +36,7 @@ Example:
 To compile the program, run the following command:
 
 ```bash
-gcc -o packet_capture packet_capture.c -lpcap
+gcc -o sniffer sniffer.c -lpcap
 ```
 ## References
 https://www.tcpdump.org/pcap.html
