@@ -22,7 +22,7 @@ You can run the program from the command line using the following options:
 - `-i interface_name`: Specify the network interface to capture packets from.
 - `-n number_of_packets`: Set the number of packets to capture.
 - `-f filter_expression`: Specify a filter expression for capturing specific packets.
-- 
+  
 Example:
 ```bash
 ./sniffer -i eth0 -s 1500 -n 50 -f "port 80"
