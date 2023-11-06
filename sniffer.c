@@ -135,7 +135,7 @@ void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *pa
 	const struct sniff_ethernet *ethernet;  /* The ethernet header [1] */
 	const struct sniff_ipv4 *ipv4;              /* The IP header */
 	const struct sniff_ipv6 *ipv6;
-    const struct sniff_arp *arp;  
+        const struct sniff_arp *arp;  
 
 
 	printf("\nPacket number %d:\n", count);
@@ -335,7 +335,7 @@ void process_udp(const struct sniff_udp *udp, int ip_len) {
 
 int main(int argc, char *argv[])
 {
-	char *dev, errbuf[PCAP_ERRBUF_SIZE]; //error string
+    char *dev, errbuf[PCAP_ERRBUF_SIZE]; //error string
     pcap_if_t *all_devs; //list of all devices
     pcap_t *handle; //session handle
     struct bpf_program fp; //compiled filter expression
@@ -446,5 +446,3 @@ int main(int argc, char *argv[])
 
 	return(0);
 }
-
-//sudo tcpdump -A -s 1492 dst port 80
