@@ -175,6 +175,8 @@ void process_ipv6 (const struct sniff_ipv6 *ipv6) {
     int size_ip;
 	size_ip = 40;
 
+    int offset = 40;
+
     // Extract the source and destination IP addresses
     char src_ip[INET6_ADDRSTRLEN];
     char dst_ip[INET6_ADDRSTRLEN];
@@ -184,25 +186,36 @@ void process_ipv6 (const struct sniff_ipv6 *ipv6) {
     printf("       From: %s\n", src_ip);
     printf("         To: %s\n", dst_ip);
 
-    // Determine the protocol
-    switch (ipv6->ip_next_header) {
+     int next_header = ipv6->ip_next_header;
+    while (next_header == IPPROTO_IPV6 ||
+           next_header == IPPROTO_HOPOPTS) {
+        // Skip over IPv6 extension headers, as they have variable lengths
+        const uint8_t *extension_header = ((const uint8_t *)ipv6) + offset;
+        int header_length = (extension_header[1] + 1) * 8;  // Length is in 8-byte units
+        offset += header_length;
+        next_header = extension_header[0];
+    }
+
+    switch (next_header) {
         case IPPROTO_TCP:
             printf("   Protocol: TCP\n");
-            tcp = (struct sniff_tcp*)(ipv6 + size_ip);
-            process_tcp(tcp, size_ip, ipv6->ip_payload_length);
+            tcp = (const struct sniff_tcp *)(((const char *)ipv6) + offset);
+            process_tcp(tcp, size_ip, ntohs(ipv6->ip_payload_length));
             break;
         case IPPROTO_UDP:
             printf("   Protocol: UDP\n");
-            udp = (struct sniff_udp*)(ipv6 + size_ip);
+            udp = (const struct sniff_udp *)(((const char *)ipv6) + offset);
+            process_udp(udp, ntohs(ipv6->ip_payload_length));
             break;
-        case IPPROTO_ICMP:
+        case IPPROTO_ICMPV6:
             printf("   Protocol: ICMP\n");
             break;
 		case IPPROTO_IP:
 			printf("   Protocol: IP\n");
 			return;
-        default:
-            printf("   Protocol: unknown\n");
+		default:
+			printf("   Protocol: unknown: %d\n", next_header);
+			return;
     }
 }
 
