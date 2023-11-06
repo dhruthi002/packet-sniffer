@@ -37,7 +37,6 @@ const struct sniff_udp *udp; /* The UDP header */
 const char *payload; /* Packet payload */
 
 u_int size_ip;
-u_int size_tcp;
 int snap_len = SNAP_LEN;
 
 /* ARP header */
