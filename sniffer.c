@@ -134,7 +134,7 @@ void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *pa
 	const struct sniff_ethernet *ethernet;  /* The ethernet header [1] */
 	const struct sniff_ipv4 *ipv4;              /* The IP header */
 	const struct sniff_ipv6 *ipv6;
-        const struct sniff_arp *arp;  
+    const struct sniff_arp *arp;  
 
 
 	printf("\nPacket number %d:\n", count);
@@ -303,6 +303,21 @@ void process_tcp (const struct sniff_tcp *tcp, int size_ip, int ip_len) {
 	if (size_payload > 0) {
 		printf("   Payload (%d bytes):\n", size_payload);
 		print_payload(payload, size_payload, snap_len);
+
+    if (size_payload > 0 && strstr((const char *)payload, "HTTP") != NULL) {
+        // Check the HTTP method
+        if (strstr((const char *)payload, "GET") != NULL) {
+            printf("   HTTP Request Type: GET\n");
+        } else if (strstr((const char *)payload, "POST") != NULL) {
+            printf("   HTTP Request Type: POST\n");
+        } else if (strstr((const char *)payload, "PUT") != NULL) {
+            printf("   HTTP Request Type: PUT\n");
+        } else if (strstr((const char *)payload, "DELETE") != NULL) {
+            printf("   HTTP Request Type: DELETE\n");
+        } else {
+            printf("   Unknown HTTP Request Type\n");
+        }
+    }        
 	}
 }
 
@@ -325,16 +340,57 @@ void process_udp(const struct sniff_udp *udp, int ip_len) {
     /* checksum information */
     printf("   Checksum: 0x%04X\n", ntohs(udp->uh_sum));
 
+
+    // Check if the payload size is greater than zero and looks like a DNS query
+    if (size_payload >= 12) { // A DNS query typically has a minimum size of 12 bytes
+
+        // Check the DNS query flag (third and fourth bytes)
+        if (payload[2] == 0x01 && payload[3] == 0x00) {
+            printf("   DNS query (UDP)\n");
+
+            // Extract and print more DNS query information
+            uint16_t query_id = (payload[0] << 8) | payload[1];
+            uint16_t question_count = (payload[4] << 8) | payload[5];
+
+            printf("   DNS Query ID: %u\n", query_id);
+            printf("   Question Count: %u\n", question_count);
+            char dn[256] = ""; 
+            int first_label = 1;
+            // Extract and print the domain name being queried
+            int offset = 12; // Start of the DNS query section
+            while (offset < size_payload) {
+                int label_length = payload[offset];
+                if (label_length == 0) {
+                    break; // End of domain name
+                }
+
+                // Append the label to the fully-qualified domain name (FQDN)
+
+                if (!first_label) {
+                    strncat(dn, ".", sizeof(dn) - strlen(dn) - 1);
+                }
+                strncat(dn, (char *)(payload + offset + 1), label_length);
+                offset += (label_length + 1);
+                first_label = 0;
+            }
+
+            // Print the fully-qualified domain name (FQDN)
+            printf("   Domain Name: %s\n", dn);
+
+        }
+    }
+
  	/* print payload data */
 	if (size_payload > 0) {
 		printf("   Payload (%d bytes):\n", size_payload);
 		print_payload(payload, size_payload, snap_len);
 	}
+
 }
 
 int main(int argc, char *argv[])
 {
-    char *dev, errbuf[PCAP_ERRBUF_SIZE]; //error string
+	char *dev, errbuf[PCAP_ERRBUF_SIZE]; //error string
     pcap_if_t *all_devs; //list of all devices
     pcap_t *handle; //session handle
     struct bpf_program fp; //compiled filter expression
@@ -445,3 +501,4 @@ int main(int argc, char *argv[])
 
 	return(0);
 }
+
