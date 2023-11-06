@@ -259,32 +259,37 @@ void process_tcp (const struct sniff_tcp *tcp, int size_ip, int ip_len) {
 	/* compute tcp payload (segment) size */
 	size_payload = ntohs(ip_len) - (size_ip + size_tcp);
 
-	/* Print payload data */
+	/* print payload data */
 	if (size_payload > 0) {
 		printf("   Payload (%d bytes):\n", size_payload);
-		//print_payload(payload, size_payload);
+		print_payload(payload, size_payload);
 	}
 }
 
 void process_udp(const struct sniff_udp *udp, int ip_len) {
     int size_udp;
     int size_payload;
-    const u_char payload;
+    const u_char *payload;
 
     size_udp = ntohs(udp->uh_len);
 
     printf("   Src Port: %u\n", ntohs(udp->uh_sport));
     printf("   Dst Port: %u\n", ntohs(udp->uh_dport));
-    //printf("   UDP Length: %u bytes\n", udp_length);
 
+    /* define/compute tcp payload (segment) offset */
+	payload = ((const u_char *)udp + 8);
+
+    /* compute udp payload (segment) size */
     size_payload = ntohs(ip_len) - size_ip - 8;
 
-    /* Checksum information */
+    /* checksum information */
     printf("   Checksum: 0x%04X\n", ntohs(udp->uh_sum));
 
-    /* You can process UDP payload here if needed. */
-
-    printf("   UDP payload processing goes here (if needed).\n");
+ 	/* print payload data */
+	if (size_payload > 0) {
+		printf("   Payload (%d bytes):\n", size_payload);
+		print_payload(payload, size_payload);
+	}
 }
 
 
