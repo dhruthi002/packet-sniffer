@@ -1,0 +1,1490 @@
+Packet Sniffer - A simple sniffer example using libpcap
+
+Device: wlp1s0
+Number of packets: 100
+Filter expression:  
+
+Packet number 1:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (125 bytes):
+00000   17 03 03 00 78 00 00 00  00 00 00 00 09 3a 13 be    ....x........:..
+00016   dd 23 6b ce be 9e c6 cf  27 10 2f b4 3b 9c 87 40    .#k.....'./.;..@
+00032   17 01 b3 b8 eb 1c b1 d5  31 ab 2b 2e 66 c6 3e 3d    ........1.+.f.>=
+00048   e4 e2 d3 c1 3f 71 05 96  4c 74 20 cf a6 46 5b 18    ....?q..Lt ..F[.
+00064   8a a0 93 c7 6f 50 23 35  ee 4a 59 e6 7d 86 18 a4    ....oP#5.JY.}...
+00080   68 c2 af 1d 4e 64 c3 3d  fd 53 2e 98 a6 50 15 e1    h...Nd.=.S...P..
+00096   ba ca 5c a0 44 f4 99 93  a3 54 e2 86 fe ba f1 d7    ..\.D....T......
+00112   94 3b af ea 1c 2a a7 a1  e2 40 fe 6e b9             .;...*...@.n.
+
+Packet number 2:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (1400 bytes):
+00000   17 03 03 08 fb 00 00 00  00 00 00 00 0a b4 f1 c7    ................
+00016   c1 8a 6b ac e2 ad 4c 93  83 4d 1f a9 f6 fb e6 2f    ..k...L..M...../
+00032   f8 68 82 ec c8 5e 19 36  e8 0d 4d a3 80 b9 48 c6    .h...^.6..M...H.
+00048   b8 56 37 15 03 51 74 4c  5f 39 4a 91 03 9d 51 e6    .V7..QtL_9J...Q.
+00064   4e 3d 00 a8 e4 64 b0 e7  e4 8d 18 18 9d af aa 72    N=...d.........r
+00080   3d 4a 07 98 cd b5 69 9c  96 48 44 0c a6 3b 81 db    =J....i..HD..;..
+00096   3d 4c 81 07 5c 00 3a 42  65 45 36 c0 d9 c7 90 65    =L..\.:BeE6....e
+00112   96 2e 10 7f 3d 49 e5 10  24 a0 60 13 43 f6 89 81    ....=I..$.`.C...
+00128   5c 4a 58 8e da 2b f9 3c  76 cb 8c db ba d9 3a 77    \JX..+.<v.....:w
+00144   f3 6b 08 2b f2 c3 f1 c0  e4 ed 85 27 cb 57 17 07    .k.+.......'.W..
+00160   96 c1 fa 1b 52 e4 7f a0  7c a4 da 27 5f e9 cd 53    ....R...|..'_..S
+00176   42 72 d5 03 74 89 45 15  93 78 ff 52 a3 7b a8 8f    Br..t.E..x.R.{..
+00192   90 b8 4f ca 91 69 97 8d  1d 5e 6e bf 86 ed f3 b1    ..O..i...^n.....
+00208   ce b5 2d 70 61 54 aa d6  e4 ce 94 3c 25 eb 1a c3    ..-paT.....<%...
+00224   69 d4 bf b5 78 db d9 44  47 c1 9f c9 6b 32 8e 5d    i...x..DG...k2.]
+00240   b1 29 b1 f7 7c 4e 5b 9a  8c d3 72 c2 21 cb 56 27    .)..|N[...r.!.V'
+00256   2e 14 a8 b9 de 60 7b 03  ca ce d4 1c de bd ee 07    .....`{.........
+00272   81 ce 3b ab 62 f9 de d5  42 38 ee 35 17 a1 e6 b1    ..;.b...B8.5....
+00288   1d 88 48 6f e5 31 a2 77  a2 77 6f 10 2d e4 55 ba    ..Ho.1.w.wo.-.U.
+00304   45 db 97 86 1a 1d 37 02  0b 41 60 a9 3c 0d 73 d4    E.....7..A`.<.s.
+00320   28 2c 58 2d 7b d3 0f ff  73 cb fa 80 da 19 6f 44    (,X-{...s.....oD
+00336   2f 1f 38 f6 6d 5b 8c 57  aa 26 a2 7b a2 b3 66 b1    /.8.m[.W.&.{..f.
+00352   3d 7d 9b 88 56 cc fc da  5c 0a 36 ba 0d 5c 2c af    =}..V...\.6..\,.
+00368   34 d9 ab 59 a4 04 84 ec  81 a1 29 06 15 01 3c e1    4..Y......)...<.
+00384   89 a2 93 9e 5f 3d 7a 7b  24 5e 2d 49 b9 20 6c 20    ...._=z{$^-I. l 
+00400   fa a4 bc a9 6d e0 cd 85  b0 a8 43 12 89 61 53 63    ....m.....C..aSc
+00416   aa 52 24 c7 c9 5c 62 b4  d3 7a 32 2b cb f4 e2 6d    .R$..\b..z2+...m
+00432   b7 cd b4 e4 9c 6b 23 28  bc 07 0b 4b 27 a3 26 72    .....k#(...K'.&r
+00448   3c 43 3a 0a 30 30 49 fc  e3 5a b7 89 02 26 3c 0f    <C:.00I..Z...&<.
+00464   8e e9 35 3e e4 dd e9 fe  e1 5b 89 c8 c2 a6 fe e8    ..5>.....[......
+00480   48 74 19 6e dc 8f 40 d5  cc 38 58 64 b6 6a 70 4d    Ht.n..@..8Xd.jpM
+00496   00 a9 cb e9 4e 81 37 ac  8b 57 6b ae 2e b8 84 69    ....N.7..Wk....i
+00512   97 74 e1 ee e8 de ef 88  fe b2 e8 3c 07 4a 17 39    .t.........<.J.9
+00528   22 ef f2 8a 59 e1 08 d2  a5 f0 b8 53 d5 5c 0b cd    "...Y......S.\..
+00544   62 78 b8 46 d3 42 6f 62  46 c5 b5 89 80 95 27 43    bx.F.BobF.....'C
+00560   36 20 ab 12 b5 f2 63 75  41 9f 7d d3 ac b3 24 51    6 ....cuA.}...$Q
+00576   00 7b b5 00 80 ee 34 83  2d e6 64 c6 3b fa 00 30    .{....4.-.d.;..0
+00592   73 9a 86 f3 07 2f 3e 39  22 10 5e bc 69 aa 6d 97    s..../>9".^.i.m.
+00608   50 d8 56 ab 96 76 6d f2  62 6f b5 c5 87 d1 7f a7    P.V..vm.bo......
+00624   25 41 dd 93 af 61 70 7a  e7 fc 79 18 31 b6 a3 34    %A...apz..y.1..4
+00640   d7 2d 7f 0b 8a 66 12 eb  35 eb 5f 04 11 d4 6f ca    .-...f..5._...o.
+00656   5a 48 a6 c4 2d d8 74 20  72 6c 02 a7 8e 37 20 a2    ZH..-.t rl...7 .
+00672   09 92 4f 4b 14 45 f5 e5  2e 11 c5 8e d1 4f 03 ca    ..OK.E.......O..
+00688   a9 0b 11 07 83 fe 53 83  44 1d 3a 9d 30 2d 18 44    ......S.D.:.0-.D
+00704   6b 32 1a 49 f3 07 16 0a  4f c7 a6 29 57 09 a1 3d    k2.I....O..)W..=
+00720   d4 0d fc f9 ed a5 9b f7  ca fd 80 e8 4c 36 76 c4    ............L6v.
+00736   39 91 a7 bf 12 f8 b2 bc  2a 85 55 bc 04 f0 34 fd    9.......*.U...4.
+00752   e7 9c ea f1 09 da c5 17  b2 7e 4e 48 fb 8c 15 35    .........~NH...5
+00768   0d bf 60 5a aa 21 bf 51  2b c8 29 02 53 9b 44 96    ..`Z.!.Q+.).S.D.
+00784   8c fe 38 4a 59 36 29 37  56 ec a6 08 a0 b3 4d 8f    ..8JY6)7V.....M.
+00800   10 8a 27 14 29 7e 6e aa  c0 f3 cc c6 6c 5e e6 8f    ..'.)~n.....l^..
+00816   3c e9 2f 26 b9 2f 5f 07  88 f0 2e c7 01 b8 19 58    <./&./_........X
+00832   90 88 77 45 26 12 45 b2  33 fd bc 8c a4 94 23 5e    ..wE&.E.3.....#^
+00848   75 51 d2 c2 fe ce e1 c2  ac d9 62 e4 e3 00 28 26    uQ........b...(&
+00864   07 94 58 87 a1 70 b5 87  3d b7 27 b5 53 d9 e9 d4    ..X..p..=.'.S...
+00880   1e ba d6 1a 2d 8a 3e 02  f7 75 17 e4 87 7b 91 94    ....-.>..u...{..
+00896   44 8a 0b 8f e7 de 3e 14  27 fd 02 45 22 e3 93 80    D.....>.'..E"...
+00912   47 ff aa b3 67 b0 ac 14  e8 f6 2c 2e 9f e2 18 f2    G...g.....,.....
+00928   f0 ba f0 d6 17 1b 68 8a  76 3a 65 74 9d bf 93 93    ......h.v:et....
+00944   2c ca f7 1f f3 59 1e db  00 f9 d8 40 71 b0 7f 66    ,....Y.....@q..f
+00960   34 8e 35 fc 90 3d 95 b8  16 f8 fc 4b 37 59 fe 6a    4.5..=.....K7Y.j
+00976   9a ca 98 5f 55 7f ce f2  c2 e3 ef cf e1 8b ca de    ..._U...........
+00992   a7 e8 8c d3 db 88 57 b4  d7 c7 7f 14 36 85 ee 38    ......W.....6..8
+01008   65 13 94 3c e9 59 12 bc  29 f2 3f 03 81 27 9f ab    e..<.Y..).?..'..
+01024   26 15 40 ed e0 b8 0a 4e  35 f7 59 7b b5 62 92 a5    &.@....N5.Y{.b..
+01040   1a dd 82 ea 62 42 f5 6f  46 b8 ff 29 9f a5 03 7e    ....bB.oF..)...~
+01056   c8 11 61 fe 82 73 30 96  e2 13 9b 3a 82 9b 94 34    ..a..s0....:...4
+01072   79 da f8 f7 a5 54 38 aa  24 04 c3 51 36 f4 fc df    y....T8.$..Q6...
+01088   11 fd dd e3 2a 2b 30 01  07 10 0f 65 f8 53 b6 89    ....*+0....e.S..
+01104   9c a2 ff e0 0b 2a 0d b8  62 c6 f9 f4 25 cb a8 66    .....*..b...%..f
+01120   d7 fe 65 0a 4a a7 8b bf  d5 a1 30 26 89 cd 9f 33    ..e.J.....0&...3
+01136   72 ad c5 c6 61 f0 cd ea  06 6d 1d 7c 00 fe 29 28    r...a....m.|..)(
+01152   ce fc 73 82 b0 48 1e c0  5a 8f 1c 41 2e fd af 62    ..s..H..Z..A...b
+01168   bb 99 3f 87 fd 81 fd 02  a2 db 6e a7 a4 a0 f8 4d    ..?.......n....M
+01184   ec 02 bf ce 19 c5 d8 3f  34 ba d9 b2 b8 ee 96 d0    .......?4.......
+01200   eb b9 5d 35 c8 1f 20 bc  61 be ec 76 30 bf 1f 76    ..]5.. .a..v0..v
+01216   ee 57 3a 82 2c a7 fa 53  e7 b1 57 ad 38 4c 3a c9    .W:.,..S..W.8L:.
+01232   e6 83 1e 39 a0 39 60 00  d8 2b 9c 9c 90 70 ff c6    ...9.9`..+...p..
+01248   9d a9 87 90 b3 be 8f 25  94 50 6d c5 be 8b 4d da    .......%.Pm...M.
+01264   8d be 9f 8f 45 1b 92 b9  62 ce c9 af 66 5a d1 d7    ....E...b...fZ..
+01280   06 66 88 51 d7 75 94 fa  05 f8 e6 38 77 f0 fd 4c    .f.Q.u.....8w..L
+01296   64 e6 8e 56 ce f5 19 d7  1c 47 20 48 a9 d6 c5 1b    d..V.....G H....
+01312   fd b2 cd 17 17 25 98 0c  57 d4 53 b1 03 25 74 2e    .....%..W.S..%t.
+01328   de 82 d1 c5 7a 85 4d 4e  2e 27 87 53 10 c9 8b 5f    ....z.MN.'.S..._
+01344   81 e6 d4 ce 60 6a 5f f1  1f db eb c4 19 62 5b f0    ....`j_......b[.
+01360   4d 05 87 ba dc a8 25 50  4b 32 8e 5d cd ea f7 ef    M.....%PK2.]....
+01376   58 b9 4e 72 18 2c 7b c7  93 0c f8 0e 3e 31 1d 8f    X.Nr.,{.....>1..
+01392   60 fe 07 7f 3c 04 76 6c                             `...<.vl
+
+Packet number 3:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (904 bytes):
+00000   6b f5 87 0a 23 29 d2 fa  74 b5 65 e6 d0 e9 4e a9    k...#)..t.e...N.
+00016   83 27 f7 81 5c 8f e9 d2  90 cf de 16 73 9b 40 5d    .'..\.......s.@]
+00032   47 3a ab 92 e6 ad 0f 01  70 c9 d3 59 9f 15 27 f5    G:......p..Y..'.
+00048   af 51 b0 e0 4f 52 99 6d  2d 06 7e 28 7b 87 6c 86    .Q..OR.m-.~({.l.
+00064   b0 31 60 2b 90 cb a8 91  5b d8 f6 1c c5 2c 36 69    .1`+....[....,6i
+00080   4b 56 1d 5d 52 ca 10 40  31 ea 7a 59 a5 88 98 1b    KV.]R..@1.zY....
+00096   5a a7 e3 50 42 40 9b 4f  71 7a d9 c3 4c c0 5d 45    Z..PB@.Oqz..L.]E
+00112   09 c9 d8 bb 7c 23 05 fe  9b b8 f9 55 78 2a 17 20    ....|#.....Ux*. 
+00128   a9 0d f8 f0 15 c4 ad fa  12 46 4d 3b 21 69 91 ec    .........FM;!i..
+00144   d7 0e 27 ab 20 0e 1a c0  da 8a 27 e8 15 23 f7 83    ..'. .....'..#..
+00160   d7 05 20 cf 23 81 90 60  3a 8a 0a 50 05 cf 2d 29    .. .#..`:..P..-)
+00176   9a c0 0b df 15 f8 8e ae  9a 76 14 a3 92 1f cb c9    .........v......
+00192   a3 e8 73 b2 1c 04 73 32  a9 66 74 52 9a fd 51 79    ..s...s2.ftR..Qy
+00208   6f af 45 ee 1a 24 9f 57  4c d8 4a 7a 52 91 4b 31    o.E..$.WL.JzR.K1
+00224   a3 f7 77 dd 8a 4f ba 35  fe 74 64 0c e0 5d ab 73    ..w..O.5.td..].s
+00240   42 fd e3 0e 19 20 4a 97  8a 33 ce 41 90 e4 20 a3    B.... J..3.A.. .
+00256   02 0b 08 13 b0 ff c2 da  51 a2 35 d3 bb eb 80 84    ........Q.5.....
+00272   fd b2 96 93 76 26 62 c2  74 61 8d dc 25 28 87 9c    ....v&b.ta..%(..
+00288   8e a3 10 dd 82 f7 67 25  cb 42 fb 50 11 8b 94 00    ......g%.B.P....
+00304   b7 0b 7c 36 46 de f8 dd  17 23 be 52 2c e1 88 fa    ..|6F....#.R,...
+00320   3a e3 59 3e e1 4a 88 dc  80 0b 06 f5 4d b6 0c 5a    :.Y>.J......M..Z
+00336   54 2a ee c3 fd 48 d6 c9  95 f6 38 2a c9 76 ab ee    T*...H....8*.v..
+00352   77 01 ae 80 1a 93 ff b5  83 49 2e a6 e0 9d fe 3f    w........I.....?
+00368   c6 c0 fd 2d c1 66 7f 9c  65 d4 8d 28 85 7a e3 14    ...-.f..e..(.z..
+00384   ef dc c5 ac bb d9 54 d4  5b 3f 91 d0 9f 9a 53 8e    ......T.[?....S.
+00400   ce 80 9a 96 ea 3b 04 64  8b 4d e3 c7 d6 7b ec d5    .....;.d.M...{..
+00416   4b b7 24 6c 75 49 f0 c4  3b ef e8 e9 53 28 be 61    K.$luI..;...S(.a
+00432   47 35 bd ba 96 39 d6 34  e8 bf bc a2 52 79 4c 5a    G5...9.4....RyLZ
+00448   a5 8b ff fb d9 50 5f a7  2c 28 4d 29 e7 9d 8b 65    .....P_.,(M)...e
+00464   1e c8 48 a7 82 40 a4 bc  f8 69 f9 c1 66 85 33 d3    ..H..@...i..f.3.
+00480   31 2e 52 12 45 6f 9e 4c  5b a5 32 72 6f 1d f4 b0    1.R.Eo.L[.2ro...
+00496   33 86 1a 21 ef d4 da da  7d a5 e9 0f 88 83 f5 36    3..!....}......6
+00512   6f 24 bb 49 d2 8b 8a f6  9b e3 73 ae 80 83 29 6b    o$.I......s...)k
+00528   4b b6 69 8e 5e f4 05 99  6f 01 75 c1 d3 17 2a 67    K.i.^...o.u...*g
+00544   fc 98 cc f7 ff 47 2f 28  a7 cc 83 92 e8 74 32 3d    .....G/(.....t2=
+00560   ff 38 da 21 8b 34 fa 8e  05 0d 13 e9 95 cc 0f 8b    .8.!.4..........
+00576   f2 23 c7 c4 5e a2 3d 31  ca 6f f1 2f 76 60 55 7b    .#..^.=1.o./v`U{
+00592   37 b7 7b 94 e1 80 7a 2a  7b 1c 61 c6 9d d6 a7 35    7.{...z*{.a....5
+00608   56 98 11 e1 4d ee 80 a0  72 09 37 6b 0f 9f fe 71    V...M...r.7k...q
+00624   96 ac 68 fe 66 63 e9 58  e1 66 d6 6b 7f 35 45 12    ..h.fc.X.f.k.5E.
+00640   a5 3c df 94 96 26 88 9b  51 22 8f 9c 21 9a f6 37    .<...&..Q"..!..7
+00656   78 3a c7 89 dc f8 d0 e1  3c a7 2b 0d f4 2f cf 58    x:......<.+../.X
+00672   e9 0f 5e af d0 b2 25 e1  16 2d b5 71 e9 54 6a db    ..^...%..-.q.Tj.
+00688   fa e3 b6 21 9f ae f9 21  57 46 69 50 ad a5 e7 a3    ...!...!WFiP....
+00704   c2 75 36 4a 1c d8 e7 57  b0 d4 60 07 f8 62 f2 a3    .u6J...W..`..b..
+00720   22 5c db 4e aa 8d f9 3b  d4 b2 b7 8d 60 2b f9 ca    "\.N...;....`+..
+00736   45 e4 76 99 3b 1c 47 30  51 12 c8 17 24 67 c8 52    E.v.;.G0Q...$g.R
+00752   88 ff fc 70 2b ea 1a ad  46 19 a0 32 50 df 96 2e    ...p+...F..2P...
+00768   97 dc 98 09 04 dc da 34  c3 7c 9d 6a 71 b0 7b f7    .......4.|.jq.{.
+00784   4e b6 76 81 ec ec 79 f5  5a 38 76 2b a1 9c 62 2e    N.v...y.Z8v+..b.
+00800   82 9f bd 43 89 d5 1e f9  f8 27 9e 8e 08 84 15 3e    ...C.....'.....>
+00816   d9 99 d6 32 53 b0 bc e3  55 2a 51 9a 23 fc 96 e4    ...2S...U*Q.#...
+00832   d5 28 1a 8c 5c 75 46 23  96 47 b6 03 04 a5 56 21    .(..\uF#.G....V!
+00848   10 6d 40 48 f2 8e 0b fa  7f 6d 05 19 f9 06 2d 35    .m@H.....m....-5
+00864   be 71 01 c3 11 f4 26 6b  c7 2f 2c 1c 8f 2c 96 f1    .q....&k./,..,..
+00880   05 e9 5f d4 1f b4 1c f0  9d b4 d0 99 4a 77 86 05    .._.........Jw..
+00896   51 fa 74 5b cd 7b fc 52                             Q.t[.{.R
+
+Packet number 4:
+IPv4 packet
+       From: 20.50.201.204
+         To: 192.168.1.8
+   Protocol: TCP
+   Src port: 443
+   Dst port: 58604
+
+Packet number 5:
+IPv4 packet
+       From: 20.50.201.204
+         To: 192.168.1.8
+   Protocol: TCP
+   Src port: 443
+   Dst port: 58604
+   Payload (105 bytes):
+00000   17 03 03 00 64 00 00 00  00 00 00 00 06 d9 66 46    ....d.........fF
+00016   39 1f 45 ea 35 b1 6d e5  4e 26 49 57 78 ca f6 68    9.E.5.m.N&IWx..h
+00032   95 f6 55 05 db 58 10 9f  fb 11 88 39 39 d7 c4 c6    ..U..X.....99...
+00048   b3 13 b3 ef db ab 65 f2  03 af dc 47 f0 6a 7d 74    ......e....G.j}t
+00064   c5 e1 1c f4 cc f6 77 f1  b7 64 c0 83 eb 6a 0c 5f    ......w..d...j._
+00080   fa d7 d7 d1 01 a8 ba c7  37 4d 8e 96 18 3d 68 4b    ........7M...=hK
+00096   6b 84 1c de cb 53 a7 16  55                         k....S..U
+
+Packet number 6:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (42 bytes):
+00000   17 03 03 00 25 00 00 00  00 00 00 00 0b 62 8f 9d    ....%........b..
+00016   3c c7 ca 72 42 1e 23 34  0d 12 16 0d 22 ef f3 d8    <..rB.#4...."...
+00032   d9 ba ea 60 79 b6 63 20  f0 2f                      ...`y.c ./
+
+Packet number 7:
+IPv4 packet
+       From: 20.50.201.204
+         To: 192.168.1.8
+   Protocol: TCP
+   Src port: 443
+   Dst port: 58604
+
+Packet number 8:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2404:6800:4003:c03::bc
+   Protocol: TCP
+   * Invalid TCP header length: 0 bytes
+
+Packet number 9:
+IPv6 packet
+       From: 2404:6800:4003:c03::bc
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: TCP
+   * Invalid TCP header length: 0 bytes
+
+Packet number 10:
+IPv4 packet
+       From: 192.168.1.8
+         To: 239.255.255.250
+   Protocol: UDP
+
+udp wip
+
+Packet number 11:
+IPv6 packet
+       From: fe80::1
+         To: fe80::78b9:eb6b:b028:2bfb
+   Protocol: unknown
+
+Packet number 12:
+IPv6 packet
+       From: fe80::78b9:eb6b:b028:2bfb
+         To: fe80::1
+   Protocol: unknown
+
+Packet number 13:
+IPv6 packet
+       From: 2401:4900:1f27:770c::1
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: unknown
+
+Packet number 14:
+ARP packet
+
+Packet number 15:
+ARP packet
+
+Packet number 16:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2401:4900:1f27:770c::1
+   Protocol: unknown
+
+Packet number 17:
+IPv4 packet
+       From: 192.168.1.8
+         To: 239.255.255.250
+   Protocol: UDP
+
+udp wip
+
+Packet number 18:
+IPv6 packet
+       From: fe80::78b9:eb6b:b028:2bfb
+         To: 2401:4900:1f27:770c::1
+   Protocol: unknown
+
+Packet number 19:
+IPv6 packet
+       From: 2401:4900:1f27:770c::1
+         To: fe80::78b9:eb6b:b028:2bfb
+   Protocol: unknown
+
+Packet number 20:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (120 bytes):
+00000   17 03 03 00 73 00 00 00  00 00 00 00 0c eb 73 91    ....s.........s.
+00016   1b 15 06 6e cc af 7b 39  1b 39 bb d8 93 7d c8 de    ...n..{9.9...}..
+00032   03 2f da 15 bf bb 3d 8d  23 07 53 8d 4c 6b b5 2f    ./....=.#.S.Lk./
+00048   76 2d a7 52 40 42 1b 44  3c af ac 2c 25 70 ba 5a    v-.R@B.D<..,%p.Z
+00064   b3 c1 52 c2 a1 cc 3a 9e  39 35 71 fb a8 20 78 c5    ..R...:.95q.. x.
+00080   62 9e 44 eb 67 af ea b9  34 f6 6d 7f b9 c7 35 5d    b.D.g...4.m...5]
+00096   a4 40 62 bf 07 87 6d a9  e2 46 ad eb 98 65 c1 ea    .@b...m..F...e..
+00112   5a 6b 16 df 00 4b 12 c4                             Zk...K..
+
+Packet number 21:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (1400 bytes):
+00000   17 03 03 08 fb 00 00 00  00 00 00 00 0d a2 f6 69    ...............i
+00016   5a d1 56 f0 a3 1f 7c 43  a7 22 9f ce 04 31 87 d7    Z.V...|C."...1..
+00032   65 19 0b 09 43 9e cd 12  57 44 ce af 76 97 ef 15    e...C...WD..v...
+00048   92 fb d6 7f 71 80 bd 70  98 d7 72 45 ec 1f 34 a3    ....q..p..rE..4.
+00064   f0 45 34 8c 63 61 6c 3c  09 d4 df b6 33 7c 85 cd    .E4.cal<....3|..
+00080   a7 10 c0 11 3c 1d 1f df  3b 09 17 1c e3 13 39 9a    ....<...;.....9.
+00096   2d cd 9b b7 0c de 2d 18  9a 08 a8 30 9a cc 4a ce    -.....-....0..J.
+00112   9b 6d 85 9c 93 72 d5 74  5d ba 20 b9 a8 57 53 e4    .m...r.t]. ..WS.
+00128   66 51 4e 8f 5c e7 ea 60  ed bc 9f 57 5c 98 2a a7    fQN.\..`...W\.*.
+00144   30 95 01 26 b0 c2 06 79  cf eb d8 bd a8 58 7e 7d    0..&...y.....X~}
+00160   74 ac 2e e4 64 63 97 16  7c cc 43 06 00 eb ce 79    t...dc..|.C....y
+00176   7b 6b e6 81 82 eb 55 78  6b 4e ef 15 cd 8f 97 94    {k....UxkN......
+00192   98 da db df 0f 49 ae 8f  42 82 37 45 b1 3d 38 3e    .....I..B.7E.=8>
+00208   b5 22 b8 e7 54 0f 3b e0  60 71 fb 96 97 a5 c7 d5    ."..T.;.`q......
+00224   3d a1 34 54 f1 60 a6 54  50 49 61 07 42 dc 5a ed    =.4T.`.TPIa.B.Z.
+00240   c5 c1 9a fd 08 ba ce 0b  79 96 93 3f 8c 14 9b 93    ........y..?....
+00256   63 c1 f4 94 8b 85 80 b4  47 21 cf 56 cd 5f f1 b2    c.......G!.V._..
+00272   46 f8 13 01 a0 90 2e d5  65 23 42 43 60 b4 e0 06    F.......e#BC`...
+00288   89 9e 88 f8 4d 1d 03 c3  53 22 a5 4f 87 79 0e b2    ....M...S".O.y..
+00304   98 f7 49 ab 9e 03 68 4b  3a ec ff 3f 34 b2 be 39    ..I...hK:..?4..9
+00320   8e dd 3f d3 66 49 5a 0a  e7 4c 7f 43 1b 10 f7 09    ..?.fIZ..L.C....
+00336   dc bf 0a 39 ec 41 16 fb  ca 22 16 c3 a4 ec 72 94    ...9.A..."....r.
+00352   d5 cb c2 7c db 58 a8 f4  20 00 d2 b2 4d 40 4d 77    ...|.X.. ...M@Mw
+00368   71 de 8d fb 1b 35 f1 7c  16 b6 83 2f 1d 0b 5a 20    q....5.|.../..Z 
+00384   1c 06 cf ab 9d 00 67 5c  2b a7 44 3e 90 a0 49 dd    ......g\+.D>..I.
+00400   16 b4 8c 7c b0 ec 9a 45  80 d3 e0 57 e2 71 11 78    ...|...E...W.q.x
+00416   a0 81 8d 3e 29 d1 5e fe  52 4b fa 22 51 6b 44 0a    ...>).^.RK."QkD.
+00432   fc e5 be 06 58 96 83 bb  b2 1a e1 6f 6a ac ea 3b    ....X......oj..;
+00448   70 c3 be e2 51 e9 27 68  c6 d3 93 f4 d0 a8 a6 3f    p...Q.'h.......?
+00464   10 74 9c 72 e0 77 3b 90  8b 74 6d 19 f0 11 95 14    .t.r.w;..tm.....
+00480   b8 a7 94 bb 0d d7 10 0c  dd 51 ef 2c d1 05 6b 29    .........Q.,..k)
+00496   10 db eb a6 ed 84 97 c9  d4 48 af d2 7b e1 5c ba    .........H..{.\.
+00512   c6 0b e0 25 47 56 5e f3  cd 8a 32 16 5a 63 80 0b    ...%GV^...2.Zc..
+00528   de 89 bd 4f d8 16 e8 50  57 3c a6 b6 c5 82 b9 6a    ...O...PW<.....j
+00544   ad f3 a5 df 73 c9 c4 af  c9 9c 4f e1 3e 60 84 c8    ....s.....O.>`..
+00560   28 35 5c 77 33 78 23 de  0e b5 df 1e 90 d9 e7 36    (5\w3x#........6
+00576   68 37 6d c6 72 7b c5 cd  ff 13 c5 40 4b 3b a0 59    h7m.r{.....@K;.Y
+00592   37 6c dd 68 cd e8 8a 71  07 9a b4 33 32 b6 3f 50    7l.h...q...32.?P
+00608   fb ff 1e d0 16 0b e6 88  7b 89 1c 10 b9 04 c9 e8    ........{.......
+00624   c8 a0 75 0d 02 4b 49 03  c4 85 d8 b9 97 07 de 24    ..u..KI........$
+00640   7d 1f 29 18 f1 ec 59 c0  39 0b 85 6e 2a c0 f1 f2    }.)...Y.9..n*...
+00656   83 a2 de 1c 47 64 0f ce  95 2f e0 c2 d9 a6 90 4d    ....Gd.../.....M
+00672   44 e6 bd ba 56 04 49 fc  34 5e e8 af 3b dd 09 3b    D...V.I.4^..;..;
+00688   b2 f2 72 89 d0 06 1c 5d  28 2a 86 21 96 e9 b7 1c    ..r....](*.!....
+00704   28 54 f3 7f bc 0e ce b0  b6 64 60 b5 18 f0 16 c8    (T.......d`.....
+00720   9c d1 eb c0 8c cd 53 fa  4c 07 95 ce 0c d8 f6 ac    ......S.L.......
+00736   81 2e 4a fa 1c 5b 88 69  01 24 c5 9d 87 51 ee 82    ..J..[.i.$...Q..
+00752   51 e5 e8 5d c6 5b b7 b8  2e bb 94 a1 62 0e 54 34    Q..].[......b.T4
+00768   79 bc 20 ea b7 6b f3 44  aa eb 91 49 11 09 ab c0    y. ..k.D...I....
+00784   a3 37 df 9f 6b 84 ed 78  80 dd e7 ee a1 46 31 9d    .7..k..x.....F1.
+00800   bf a7 71 0b 1d a6 c9 7a  29 4c 62 a4 db 70 5d 17    ..q....z)Lb..p].
+00816   3c d4 f4 58 67 7f 30 6a  9c 46 3e 4f b6 85 d4 76    <..Xg.0j.F>O...v
+00832   75 24 96 7c 7a 40 c4 c6  91 ed 68 ba d7 7a c2 34    u$.|z@....h..z.4
+00848   2b 2d 6b 83 27 30 7f a0  63 6a 2d 48 f7 a6 46 75    +-k.'0..cj-H..Fu
+00864   f6 62 f7 4e 47 44 50 f2  d8 ce 47 97 b2 25 ff a7    .b.NGDP...G..%..
+00880   24 9c 67 4a 8a 43 d9 44  31 6b 26 ad b8 5c 94 41    $.gJ.C.D1k&..\.A
+00896   c4 c7 4f c3 19 11 4e d6  e7 3a 8d 7d 0a 5e 89 c4    ..O...N..:.}.^..
+00912   83 c5 2e f4 f9 c0 32 8e  76 47 5b f6 37 bb d8 b6    ......2.vG[.7...
+00928   27 91 cf 46 d3 7d d9 b7  a8 04 3b 30 ee 6b 08 26    '..F.}....;0.k.&
+00944   f8 76 26 0d 5e 9e 95 a0  ba a0 c4 6b ee b2 2a 03    .v&.^......k..*.
+00960   b5 d4 c0 3d 10 a4 2a 6a  7c 70 f4 74 0f e5 f7 60    ...=..*j|p.t...`
+00976   5b 99 13 d4 06 d9 e3 8b  61 6a bf 75 1d d8 72 ca    [.......aj.u..r.
+00992   dc 72 46 3e 67 c4 72 10  47 25 0b 70 71 79 ab 69    .rF>g.r.G%.pqy.i
+01008   14 7e bf d6 2d 41 79 80  e5 f3 4a 5b b1 71 4f b3    .~..-Ay...J[.qO.
+01024   d4 e1 57 6e af 3f 7b 45  8e d3 41 78 d7 0d 0a 1d    ..Wn.?{E..Ax....
+01040   39 40 51 f6 20 f4 88 43  26 2e 04 bc dd f0 c7 5c    9@Q. ..C&......\
+01056   da e3 97 a6 bf e0 72 ac  52 12 c0 51 a6 a4 83 64    ......r.R..Q...d
+01072   82 9b 77 e5 fe a0 da 6b  43 33 fe db 63 c9 47 ff    ..w....kC3..c.G.
+01088   39 04 74 1a 53 ac 59 b2  e3 fb 8d 11 1f d7 a5 76    9.t.S.Y........v
+01104   b2 fd 25 1f c0 b4 b4 24  bd 96 28 91 e0 7e c0 02    ..%....$..(..~..
+01120   e7 9c 06 17 d7 a8 60 4e  be e5 5c b7 6f b8 dc 44    ......`N..\.o..D
+01136   59 d6 67 ec 99 c2 ee cc  4d 4e e7 99 ea 32 98 ff    Y.g.....MN...2..
+01152   de 17 15 8e 1e 0a 2e 14  e9 d6 d1 7d dd aa a4 8f    ...........}....
+01168   ac 9e 44 51 bb 39 9c 74  7a 94 af 4c 78 88 89 c7    ..DQ.9.tz..Lx...
+01184   88 93 e0 df a0 a5 97 76  fc 53 ce c8 e6 3a 50 0b    .......v.S...:P.
+01200   03 54 38 d3 77 6d ae f3  fb a2 0c 3e 19 7b a0 37    .T8.wm.....>.{.7
+01216   e1 a0 dc bd 87 0f 1e c8  83 b9 cd 5c 23 c6 90 6e    ...........\#..n
+01232   a3 94 ec 54 8f 51 fc ae  8d 58 fb d4 7b 5a c6 03    ...T.Q...X..{Z..
+01248   e0 a6 9f 5e b2 bc 2b 97  6b d4 28 65 f0 28 18 2b    ...^..+.k.(e.(.+
+01264   f7 94 2c 2a a4 f9 98 0c  d0 81 8b 20 7e 2d 6b 25    ..,*....... ~-k%
+01280   44 4b 91 e1 c4 81 4e 6e  f8 93 33 66 9e 19 05 f4    DK....Nn..3f....
+01296   83 6a 87 fe de 9d dd b6  53 5c 4b c6 fd db af bd    .j......S\K.....
+01312   4c e8 e7 57 46 2a 72 1b  99 5c 5c e0 b7 bd bc 6e    L..WF*r..\\....n
+01328   f6 83 4a 38 64 59 4d bd  fd e9 c3 c1 be 58 c5 25    ..J8dYM......X.%
+01344   2d f9 f2 ad b0 5d a4 3a  ca 55 7f 11 38 a7 cb 57    -....].:.U..8..W
+01360   a9 7e 00 d0 9a fc 5d 28  97 63 08 ad 90 33 3c ce    .~....](.c...3<.
+01376   ae 46 b7 6d 71 2e 36 8b  01 18 7b 7e 9a bc f4 e8    .F.mq.6...{~....
+01392   c5 35 ba 47 e5 8a 2c 94                             .5.G..,.
+
+Packet number 22:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (904 bytes):
+00000   fa 1c 0a 51 1a 9b 41 94  57 f9 2d 6f ba c0 b9 cb    ...Q..A.W.-o....
+00016   ca 93 1b 24 f8 d5 a2 3e  5c 25 85 a2 13 d4 b6 9a    ...$...>\%......
+00032   7e 33 88 f6 8f 63 e2 7f  94 a5 b6 ad ab 50 a3 6a    ~3...c.......P.j
+00048   cb 3d b0 b4 f0 29 36 9f  f7 c8 a8 e3 a0 5a cd 6e    .=...)6......Z.n
+00064   ae 07 73 92 1d d1 74 d4  90 3b bd 2c 80 63 4e c1    ..s...t..;.,.cN.
+00080   d6 05 ca c0 57 8f 6b 81  8a cb 04 fa 8d 33 61 bf    ....W.k......3a.
+00096   29 a8 d3 3a c3 2e 80 1a  ca 87 90 a6 7c 80 09 75    )..:........|..u
+00112   1a 60 08 66 e3 0b c1 c4  67 6f b2 c3 9f d3 e2 c6    .`.f....go......
+00128   a0 18 12 31 37 ba a5 ff  87 3a 26 c4 60 55 a7 2b    ...17....:&.`U.+
+00144   a4 99 a6 f2 5b 74 04 ea  1b 0e fb d8 b2 f6 45 85    ....[t........E.
+00160   26 8f 01 1b 3d 3c d9 ba  01 3f f6 51 2c c4 a8 34    &...=<...?.Q,..4
+00176   ea 17 45 da cc 88 f8 ba  b0 0d 2c da c5 46 eb 25    ..E.......,..F.%
+00192   12 1a b0 64 bf 45 1c bc  00 1e 83 11 a4 be 7c fe    ...d.E........|.
+00208   3c 71 3a ad 1c bb ee ae  11 c7 85 80 73 0b ed 2a    <q:.........s..*
+00224   a3 27 4c df 01 a0 43 25  66 bd d6 76 7c fd 3f b5    .'L...C%f..v|.?.
+00240   e9 56 01 dd b1 fb 66 bd  e1 f4 f4 9d fd 76 c2 df    .V....f......v..
+00256   77 94 79 46 75 4d c9 19  02 cb e0 f3 b8 03 1b d9    w.yFuM..........
+00272   be 25 d4 c6 25 69 3b c9  9d 18 92 12 e3 a6 27 de    .%..%i;.......'.
+00288   82 7e e3 df 58 f9 c8 5f  bf ca 58 c8 91 e8 20 dd    .~..X.._..X... .
+00304   35 52 75 a5 e9 36 ab 5f  6f 8e 7e 32 dd 8d c5 66    5Ru..6._o.~2...f
+00320   4c ae 7f 0b 37 9d 83 39  50 c4 a4 2c 76 08 33 16    L...7..9P..,v.3.
+00336   f1 c1 0c 18 39 cf 8f dc  a1 a0 c0 a6 50 2a 7e f3    ....9.......P*~.
+00352   c7 70 d8 60 d7 b8 99 4e  9a a6 32 96 be 6e 23 34    .p.`...N..2..n#4
+00368   d4 f8 3c 20 81 ea 19 30  85 ed f2 ef 3e 83 8e 3d    ..< ...0....>..=
+00384   06 5b 2d 1e c4 65 54 d4  1a 72 79 4c de 39 5b 28    .[-..eT..ryL.9[(
+00400   df 21 d8 bb 57 bb 78 4f  76 70 ac 37 5f c3 fc 5d    .!..W.xOvp.7_..]
+00416   36 22 8f c8 cc d1 08 b0  d9 24 30 43 96 3c cc f1    6".......$0C.<..
+00432   b8 b6 40 2c 60 08 19 98  2e 15 01 b3 e7 1d 33 81    ..@,`.........3.
+00448   d5 c4 6c 14 a9 60 2d df  ae 62 38 b1 6b a6 dd 0d    ..l..`-..b8.k...
+00464   49 57 5b 07 ae 1c c6 23  59 f6 58 b5 62 e0 e2 61    IW[....#Y.X.b..a
+00480   3c 01 1e 66 a4 40 6f 75  40 b0 23 70 72 d8 d9 3a    <..f.@ou@.#pr..:
+00496   da a3 d3 22 57 33 83 bf  06 e3 97 97 fe ea 2e 50    ..."W3.........P
+00512   c9 d9 99 91 e9 8a ae 86  d4 47 a8 85 6d f8 bf 6a    .........G..m..j
+00528   bc 99 8e 54 2e 34 35 84  2f be 89 e8 62 bb d7 4b    ...T.45./...b..K
+00544   d7 1d 5b a9 5f ee c3 df  6f 74 a6 ed 7f 5c d2 c5    ..[._...ot...\..
+00560   7b e5 ce 04 47 41 7c d9  42 de 7c 3c 1c 7a c0 0d    {...GA|.B.|<.z..
+00576   af fa ec e8 74 6a a0 ae  3d 8d a1 45 98 42 97 e6    ....tj..=..E.B..
+00592   22 be f9 93 04 ea b8 b1  94 27 3e c6 62 1c 89 94    "........'>.b...
+00608   19 75 d3 00 8a ae 1e 4c  5b e8 52 d0 2d 82 3f a2    .u.....L[.R.-.?.
+00624   f7 69 f0 c3 b1 37 24 f2  57 50 13 16 62 6c 68 8d    .i...7$.WP..blh.
+00640   cf 8b 86 97 ac 1b 43 68  03 23 38 bc ab 6d 32 f3    ......Ch.#8..m2.
+00656   e7 a2 9f 1d b5 5f 5c 53  96 21 eb a4 c5 22 8b 06    ....._\S.!..."..
+00672   33 cb 83 28 59 43 32 be  a5 d2 55 ab ad 3f b7 06    3..(YC2...U..?..
+00688   62 9f 47 18 e4 68 a7 7a  bb 29 7c f3 31 2f e9 a6    b.G..h.z.)|.1/..
+00704   92 ae 66 84 07 e0 a3 8c  17 d9 f1 b3 df 9b 41 43    ..f...........AC
+00720   c1 28 f2 9d 3c 28 c7 f5  e9 62 b0 92 ae 81 14 06    .(..<(...b......
+00736   b7 c5 52 10 02 96 32 17  5a 98 fb 76 8d 91 6f 74    ..R...2.Z..v..ot
+00752   b5 4d bd 39 f3 8c 12 33  f4 36 6c c9 15 11 24 68    .M.9...3.6l...$h
+00768   ea eb ab 23 dc 8f 37 22  3c ca 20 f8 a8 1f ee b0    ...#..7"<. .....
+00784   50 55 0d 22 30 8d fe 3a  7b 04 bc 01 73 ae f6 ea    PU."0..:{...s...
+00800   52 cd a5 d8 15 84 4a 43  fb 9a 12 26 4b 50 14 c0    R.....JC...&KP..
+00816   60 7a 1a 09 e1 e5 90 cf  e2 a3 7b 77 14 be 1e 3d    `z........{w...=
+00832   17 f1 94 bf 94 60 d6 34  57 f3 a1 8a 8e f0 9d ef    .....`.4W.......
+00848   09 af 78 fa 6d ed 8a 53  3d 8c 16 43 26 06 42 e1    ..x.m..S=..C&.B.
+00864   06 06 0d 79 aa 10 45 bd  ad 99 5f 49 cc f1 4d c9    ...y..E..._I..M.
+00880   b5 90 75 43 d9 41 dc 13  72 c4 de e2 29 f4 6f 94    ..uC.A..r...).o.
+00896   40 b3 ef 15 05 71 10 2e                             @....q..
+
+Packet number 23:
+IPv4 packet
+       From: 20.50.201.204
+         To: 192.168.1.8
+   Protocol: TCP
+   Src port: 443
+   Dst port: 58604
+
+Packet number 24:
+IPv4 packet
+       From: 20.50.201.204
+         To: 192.168.1.8
+   Protocol: TCP
+   Src port: 443
+   Dst port: 58604
+   Payload (105 bytes):
+00000   17 03 03 00 64 00 00 00  00 00 00 00 07 89 8a 9f    ....d...........
+00016   a1 19 75 c2 fb 36 e9 f8  d9 87 62 a5 48 39 cb ac    ..u..6....b.H9..
+00032   f5 d8 dc c6 16 31 de 26  90 40 ac 51 9c a2 6c ae    .....1.&.@.Q..l.
+00048   7d 7c f9 de a9 ef 26 e4  57 fc 72 33 00 43 77 78    }|....&.W.r3.Cwx
+00064   a8 82 1e 62 f7 f1 01 48  8c dc f6 1f ee 5a d0 5c    ...b...H.....Z.\
+00080   aa 0a 33 bd c5 f7 21 4e  44 8a c2 a2 39 97 36 f1    ..3...!ND...9.6.
+00096   98 f2 97 6a bc 38 fc 80  7e                         ...j.8..~
+
+Packet number 25:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+
+Packet number 26:
+IPv4 packet
+       From: 192.168.1.8
+         To: 239.255.255.250
+   Protocol: UDP
+
+udp wip
+
+Packet number 27:
+IPv4 packet
+       From: 192.168.1.8
+         To: 239.255.255.250
+   Protocol: UDP
+
+udp wip
+
+Packet number 28:
+IPv6 packet
+       From: fe80::1
+         To: fe80::78b9:eb6b:b028:2bfb
+   Protocol: unknown
+
+Packet number 29:
+IPv6 packet
+       From: fe80::78b9:eb6b:b028:2bfb
+         To: fe80::1
+   Protocol: unknown
+
+Packet number 30:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (120 bytes):
+00000   17 03 03 00 73 00 00 00  00 00 00 00 0e c7 dc 1c    ....s...........
+00016   3a 07 f2 81 d9 ac 82 01  2b 00 18 bb ac 80 4d 3d    :.......+.....M=
+00032   73 64 82 fb b0 64 15 3c  16 64 2f d9 03 12 0e 2b    sd...d.<.d/....+
+00048   33 fe 15 aa 8f b3 4b 15  59 11 2f d2 34 90 d6 a7    3.....K.Y./.4...
+00064   b6 bb 14 b6 0c f0 b7 fd  48 cf ed bc 14 6a cb 7f    ........H....j..
+00080   b9 0b 91 ac 27 14 d1 1b  a1 fc b9 0f c6 d8 e2 02    ....'...........
+00096   b4 ab 23 01 68 ae 5c 75  8a 48 3d c9 ab 66 38 ca    ..#.h.\u.H=..f8.
+00112   43 66 d6 56 62 b6 25 ee                             Cf.Vb.%.
+
+Packet number 31:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (1400 bytes):
+00000   17 03 03 08 fb 00 00 00  00 00 00 00 0f 5a ee 99    .............Z..
+00016   2b ed 29 56 35 1b db c1  56 0a fb 1f 32 ae 89 2b    +.)V5...V...2..+
+00032   30 ca 32 68 09 77 ed db  f6 6a 5a 79 9b 6c d1 fa    0.2h.w...jZy.l..
+00048   95 6a 62 a9 6d 05 17 b7  78 9a 68 71 fe e7 e8 9c    .jb.m...x.hq....
+00064   e2 0a 68 9f da f3 79 4b  ed 49 87 46 50 53 25 23    ..h...yK.I.FPS%#
+00080   2d 12 f0 0a 15 8a 4e 11  d6 27 e2 1b d1 1e 52 d6    -.....N..'....R.
+00096   a7 66 15 a7 73 41 3f 62  80 1e 7d 7a 83 a7 98 2a    .f..sA?b..}z...*
+00112   cc 46 c1 6d 4f c4 58 06  b9 45 ab 70 a7 f2 91 ba    .F.mO.X..E.p....
+00128   13 5b 14 97 a5 72 93 bc  49 35 82 2d 87 f2 bc 6a    .[...r..I5.-...j
+00144   89 21 94 39 aa ce 40 57  a5 01 82 cc d7 4a c3 5d    .!.9..@W.....J.]
+00160   fc c7 00 27 39 eb 1e 01  7b ed 27 e0 52 6d 43 6c    ...'9...{.'.RmCl
+00176   d0 ac 25 8b cd 53 78 c3  1f e7 35 6f 23 2c e1 84    ..%..Sx...5o#,..
+00192   5c 10 c0 35 4a 8d 45 43  91 1b ad 65 b2 92 b4 4c    \..5J.EC...e...L
+00208   c7 88 cb 18 6b 12 62 f0  ef b1 e6 5e e7 7a 49 e6    ....k.b....^.zI.
+00224   0d 97 52 5f 5b 84 6a 66  33 eb 5f 2d 78 3a 7b 2d    ..R_[.jf3._-x:{-
+00240   69 58 24 f1 c7 d1 ee 2c  a9 e4 fc e9 ea 60 4d 0a    iX$....,.....`M.
+00256   06 b5 1d 63 1e a4 c3 b7  b3 48 9e 9c dc 8a db 6d    ...c.....H.....m
+00272   12 99 f1 6d 04 e8 11 2f  a9 40 c3 4c 6b 4d 78 0f    ...m.../.@.LkMx.
+00288   e9 8e 73 49 10 23 8e 02  47 fe c4 1b 26 64 35 e5    ..sI.#..G...&d5.
+00304   60 cd ad 9a ba f5 c6 2d  4d e1 5d b2 a2 43 48 39    `......-M.]..CH9
+00320   c8 57 f7 83 12 05 f7 45  83 9b a4 32 d9 ec fc a7    .W.....E...2....
+00336   62 e8 4a e7 d5 26 4f 2d  72 05 dd fc e1 37 41 4f    b.J..&O-r....7AO
+00352   35 ab ec 89 7b 67 ac ce  05 dd c6 a4 7c c0 ea 31    5...{g......|..1
+00368   a6 0a 4b 67 c2 b0 dc 79  90 53 72 14 62 f3 de 4d    ..Kg...y.Sr.b..M
+00384   8f 1c 28 8c 17 61 1c 53  c6 4b 27 63 41 51 35 66    ..(..a.S.K'cAQ5f
+00400   b8 e7 09 64 5d ab e3 76  8d 88 74 aa d8 3a 37 32    ...d]..v..t..:72
+00416   16 36 d1 7b c9 a9 4a 3b  6b 03 83 f0 ef 0a 7e d2    .6.{..J;k.....~.
+00432   66 3c 76 a0 88 67 25 d8  07 ed 6c 1a 9f 5f fb 64    f<v..g%...l.._.d
+00448   ed ad d5 58 e7 41 3a 97  c2 3b 0b 03 36 31 18 e7    ...X.A:..;..61..
+00464   97 31 09 4f c3 60 59 33  36 6c 31 bc bc 93 23 70    .1.O.`Y36l1...#p
+00480   c6 d7 05 91 5e f0 d9 49  9a ca 3d ff f0 79 be 94    ....^..I..=..y..
+00496   9a 94 1e cc 89 99 88 96  f9 61 c7 30 5d 8d 0a 9e    .........a.0]...
+00512   a2 b7 7c e6 9d 34 fd b6  9c 19 1a 04 d5 0c 42 ee    ..|..4........B.
+00528   74 f9 3e 8f c8 e9 f8 57  c1 46 08 55 85 06 f5 f7    t.>....W.F.U....
+00544   10 41 11 06 cc 3d 54 e7  1f af 3b 3b 0e ac c9 c1    .A...=T...;;....
+00560   a0 48 ea 3d cc 19 7e 26  1b c3 35 07 ff f0 2e 5d    .H.=..~&..5....]
+00576   f6 cb 0a 35 fb 0c ba 7d  7e fa 11 a4 22 c7 fa d4    ...5...}~..."...
+00592   71 bb c8 44 59 a2 f8 39  59 82 e7 5c 4c e7 f1 72    q..DY..9Y..\L..r
+00608   ba 87 09 c7 9f ad 66 8a  d1 cb e2 77 57 1c 02 82    ......f....wW...
+00624   a5 5d c8 c0 a8 27 4c 4d  f7 f9 7d 61 eb f8 ab 8c    .]...'LM..}a....
+00640   f4 c0 6c 40 c7 a0 79 c0  59 0a ae 6c ca f9 4f 1c    ..l@..y.Y..l..O.
+00656   e4 02 4b f0 f7 98 a8 35  ca 7f ee 3a b1 fc f5 17    ..K....5...:....
+00672   fb 8f e5 42 e7 ff 5c 49  e0 79 88 5c cd ad 59 df    ...B..\I.y.\..Y.
+00688   30 ba 66 d1 97 2a 83 b8  4e 0c 50 93 3f b2 df b2    0.f..*..N.P.?...
+00704   1d 67 5b 59 79 2a 29 7a  9f 1d 49 7c 35 fb 6e b1    .g[Yy*)z..I|5.n.
+00720   cf 4d 27 30 a9 d3 44 ba  f3 47 86 01 4b 65 ba 11    .M'0..D..G..Ke..
+00736   94 8f a6 5d 5a c9 e9 3d  2e 9c 98 95 43 43 73 c5    ...]Z..=....CCs.
+00752   eb 8d e4 91 7a 88 46 e0  96 aa 31 39 01 bd 3d 3f    ....z.F...19..=?
+00768   97 f1 84 66 78 1d 84 7c  aa 82 73 d2 ee 9a 2d 9a    ...fx..|..s...-.
+00784   30 e2 7d 8a e6 91 33 f4  a5 f6 6a 6c a2 fe 8c 6d    0.}...3...jl...m
+00800   a3 53 44 0e 78 4f d1 f3  32 68 a6 6a 87 19 55 c4    .SD.xO..2h.j..U.
+00816   2c ff 64 f3 77 11 15 82  f5 c0 e8 f6 7d ae 77 6c    ,.d.w.......}.wl
+00832   22 10 85 0c 43 97 7f 78  f1 4a bd 99 89 e5 56 88    "...C..x.J....V.
+00848   50 c9 ef fb 99 65 42 76  ca 81 d0 bc 07 30 e2 7d    P....eBv.....0.}
+00864   f9 c8 1d 5e 26 a7 d8 62  f6 88 0a d0 4f 5d 8a a3    ...^&..b....O]..
+00880   32 0e 7e 82 46 61 ea 93  10 78 ea c5 3e 09 90 09    2.~.Fa...x..>...
+00896   cc 83 26 33 b6 f3 b1 bc  e8 f2 4c 03 b2 2b 48 cc    ..&3......L..+H.
+00912   e0 22 c0 7c cb 88 86 c6  7b c5 77 e0 d6 c4 53 15    .".|....{.w...S.
+00928   93 c4 75 e2 69 b6 89 20  1d 8a 1a e1 2d ff 2c 19    ..u.i.. ....-.,.
+00944   0b c8 84 7e 0d 36 8d 04  81 f3 92 b2 8b 90 be bd    ...~.6..........
+00960   ec a4 bb 95 f4 e7 79 15  24 6a e7 11 96 c6 84 8c    ......y.$j......
+00976   13 9e 5f e0 c4 05 2d 2d  78 98 21 71 36 77 16 e0    .._...--x.!q6w..
+00992   3a 5e b7 40 68 f2 07 60  dd 49 75 b3 88 6d 09 59    :^.@h..`.Iu..m.Y
+01008   d2 44 0e 1d a5 f9 6f 19  f1 95 17 37 7f 6f 16 e7    .D....o....7.o..
+01024   25 ea b1 e1 dc 6c 23 27  a1 3a f3 c9 23 4b 83 1c    %....l#'.:..#K..
+01040   d1 0a 72 b8 e6 53 89 ae  a8 fa b9 c5 dc 14 01 57    ..r..S.........W
+01056   79 d5 70 52 5c ad 30 dd  e2 32 75 2e e8 ff 99 cd    y.pR\.0..2u.....
+01072   71 b3 3a 0f 3f 0d c9 c8  15 e7 47 13 67 54 f4 49    q.:.?.....G.gT.I
+01088   5f 58 e7 29 0b 3b 1c 43  b9 ec aa f0 d2 c7 f4 69    _X.).;.C.......i
+01104   8c 01 ce 82 1b da f1 c5  28 7e b1 88 91 15 50 04    ........(~....P.
+01120   f5 e9 aa 0e e2 2b 63 d9  5b 2c ce 29 db 22 80 47    .....+c.[,.).".G
+01136   47 a1 df 68 97 c7 31 72  99 f9 d1 ee b4 49 37 4f    G..h..1r.....I7O
+01152   3f 67 a0 9c 2f 76 1f 91  06 d7 88 d9 4f c5 04 50    ?g../v......O..P
+01168   31 ec e6 c3 1a 31 8f c9  18 c8 9d 0f 9a eb af 00    1....1..........
+01184   5d a2 67 86 91 5a 76 39  75 40 9d 8f 6b fc 98 59    ].g..Zv9u@..k..Y
+01200   95 f3 f8 26 0b 05 03 28  ec c1 cf 99 da 58 79 09    ...&...(.....Xy.
+01216   68 32 d1 1e e8 c6 92 7f  3f c8 1d 4e b3 a5 14 32    h2......?..N...2
+01232   89 48 84 24 e2 67 10 e0  13 8b a6 20 96 53 b0 05    .H.$.g..... .S..
+01248   31 7c 3a d4 9f 7d 56 8a  9e 17 3e 83 50 1c 39 20    1|:..}V...>.P.9 
+01264   1d ea 8d c9 61 cf a1 8b  db c0 e1 ca ea ec d0 00    ....a...........
+01280   2d e2 08 61 65 96 c1 ef  ac 6f d8 95 d4 7b 82 1f    -..ae....o...{..
+01296   06 4a 50 da c4 b0 21 b9  e2 5e 09 ef ba 03 26 86    .JP...!..^....&.
+01312   ad 89 92 c5 ca f8 69 50  0f b2 c3 0c 54 17 00 b3    ......iP....T...
+01328   30 fe ae 53 05 04 f5 03  ea 46 38 44 d8 af a1 03    0..S.....F8D....
+01344   d5 6d 6b b7 ae ad 15 c3  3c 52 fb bc 10 35 0e 69    .mk.....<R...5.i
+01360   bd 12 1b b0 50 52 b9 b9  94 ec 41 d4 1d a7 b7 8a    ....PR....A.....
+01376   c7 5a 1d 28 14 d2 1e bc  7e a0 56 84 c9 0a 63 cb    .Z.(....~.V...c.
+01392   92 3b 3c dd ce 03 c4 9b                             .;<.....
+
+Packet number 32:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (904 bytes):
+00000   ff 8a 8a dc af 25 8c d5  17 98 7c 1c 25 16 b5 36    .....%....|.%..6
+00016   55 1c a4 c1 50 ae 4d a3  db 92 f3 de 16 9c 8d b1    U...P.M.........
+00032   f1 78 eb e9 0c 8e cb c0  7e 62 bb bb 48 5c d9 2c    .x......~b..H\.,
+00048   c4 67 73 cd 12 b2 b3 8b  b8 e9 21 66 48 cd 47 d4    .gs.......!fH.G.
+00064   65 11 ad c3 cd 25 5c 1c  14 4e 23 d1 ac 01 68 19    e....%\..N#...h.
+00080   d6 f5 68 d1 1e 37 e0 f2  8b 8f 63 b7 5c d1 ec f1    ..h..7....c.\...
+00096   b9 9a 70 f3 e6 59 82 d5  12 5f 9c 83 54 4b 7a 7c    ..p..Y..._..TKz|
+00112   50 21 14 39 aa 57 b3 14  5e 13 8b 33 44 06 66 37    P!.9.W..^..3D.f7
+00128   62 55 d3 d9 18 1c 66 a5  90 1a 47 b2 26 6d 2c de    bU....f...G.&m,.
+00144   b9 78 b9 25 91 45 10 3d  04 bc 37 ca e4 c2 71 12    .x.%.E.=..7...q.
+00160   17 52 58 1f 33 89 64 da  c0 8a 87 8d 82 c4 56 ff    .RX.3.d.......V.
+00176   70 d6 d6 40 c7 c8 2f a2  0f d0 f2 a6 84 7e 5e 45    p..@../......~^E
+00192   9e 53 a6 90 dd 06 81 ee  c1 ad 17 d0 de 49 5e 91    .S...........I^.
+00208   29 51 6d d9 ed 11 69 84  db 5b f3 6b bc d4 c5 3d    )Qm...i..[.k...=
+00224   3a 5e 4e bd 05 72 95 7d  30 5c e0 d4 33 49 95 3f    :^N..r.}0\..3I.?
+00240   31 66 07 c5 b3 b8 6c 42  cc 6c cd c5 a9 bf 16 8f    1f....lB.l......
+00256   55 2a 78 05 b6 7a 42 29  23 58 d5 08 25 32 5e 9f    U*x..zB)#X..%2^.
+00272   d4 0d 68 c8 49 02 2f e1  2b 3c 44 f4 e7 59 9c 76    ..h.I./.+<D..Y.v
+00288   7d e0 0e a1 53 b8 e0 3c  6d 81 60 8e 3f 8a 7f 61    }...S..<m.`.?..a
+00304   9a a0 90 8b 53 f2 0e fa  43 78 b5 dd 06 e9 90 6c    ....S...Cx.....l
+00320   b5 c0 ca a1 20 c5 90 6a  6a e7 7f 52 a3 66 de 69    .... ..jj..R.f.i
+00336   c0 4c 2a 11 9a 3a f6 5d  b2 b2 fc ac e4 93 a4 c0    .L*..:.]........
+00352   36 87 1a 59 31 d9 35 aa  09 5a d4 f7 fc 89 68 7e    6..Y1.5..Z....h~
+00368   ae af 69 ff ae dc 61 49  a6 f6 8f 03 ba 0f f7 e5    ..i...aI........
+00384   90 9b a1 8e c9 e8 f1 9d  a1 0b 37 62 31 55 35 d6    ..........7b1U5.
+00400   dd f1 86 fd 15 16 4c 25  1e 88 88 d1 7e a2 81 14    ......L%....~...
+00416   41 d2 07 c6 c2 2b 08 a0  cb 7c 3c 6d 4e e9 79 dd    A....+...|<mN.y.
+00432   76 4d b6 cc 3b c8 71 f7  0f 52 69 f5 d2 e4 b0 f6    vM..;.q..Ri.....
+00448   bb 31 0f bb 06 4c 82 50  6e c5 44 9c 93 db 31 d2    .1...L.Pn.D...1.
+00464   37 96 52 da b3 a8 7f 43  50 5c a9 ec 71 e2 93 1e    7.R....CP\..q...
+00480   d4 58 73 86 07 bf 0c 69  3c 0a b6 eb 82 df ea 63    .Xs....i<......c
+00496   82 f2 c3 ec 53 8a 35 72  73 5e 27 c7 ad dd 13 5a    ....S.5rs^'....Z
+00512   c3 2b 41 c6 fa 0c bd 27  3b 4d a1 76 6c 0c 3f e0    .+A....';M.vl.?.
+00528   f7 96 9e 56 a8 c4 07 ba  eb db aa 6b 90 63 dc a2    ...V.......k.c..
+00544   2f 34 23 0a 16 32 f6 4c  82 aa 43 a5 c0 77 dc 6d    /4#..2.L..C..w.m
+00560   13 23 fc 55 7b ed d9 33  da 46 6e 33 f9 f8 c0 16    .#.U{..3.Fn3....
+00576   8e 5c 39 49 f0 c3 4a f6  8d 8a 51 f0 a0 9b 76 d4    .\9I..J...Q...v.
+00592   56 73 bb ed ea 95 31 ce  e2 aa d7 0c ce e8 65 b9    Vs....1.......e.
+00608   41 4d c9 85 dc 13 10 2e  84 2a c5 2f 3a c9 ff f4    AM.......*./:...
+00624   eb 3e 09 41 88 d7 01 2c  f4 92 f0 86 f0 b2 63 89    .>.A...,......c.
+00640   00 38 17 a6 1c 6d 62 78  e5 74 24 a4 b3 b7 99 84    .8...mbx.t$.....
+00656   32 09 3c ac 51 4b 61 e0  49 0a 74 53 b5 60 f8 a7    2.<.QKa.I.tS.`..
+00672   81 6d 80 c2 bc 17 5e 29  76 8d 5b 91 67 20 de 2e    .m....^)v.[.g ..
+00688   e8 5e db e7 bc fa ba d9  f5 cd 1c 82 b9 fe 20 91    .^............ .
+00704   01 b1 2a fd 70 c9 4d 15  96 4e f1 40 3a 2b d7 c1    ..*.p.M..N.@:+..
+00720   0d 29 f5 ae f5 70 4f 7f  d7 3e 92 4f 86 e5 53 db    .)...pO..>.O..S.
+00736   65 24 dc 6d 68 1b 92 bd  c6 1a b3 cc 26 18 50 ae    e$.mh.......&.P.
+00752   0a df 0e 6e f6 06 7a c9  69 e5 eb c8 63 17 50 3c    ...n..z.i...c.P<
+00768   89 d0 c1 a1 f3 3c d1 32  50 19 10 8d 7f 2b 91 41    .....<.2P....+.A
+00784   88 c4 58 16 af 34 55 6a  bf 61 12 17 cf af 9f f2    ..X..4Uj.a......
+00800   7f 14 af 82 52 bb 83 65  37 91 70 c4 fa e0 b1 2e    ....R..e7.p.....
+00816   76 51 97 cf 0d 1b 08 29  59 95 0a 84 68 b8 f1 c8    vQ.....)Y...h...
+00832   ee 39 0d 16 39 65 a5 98  b5 6c d1 83 76 f0 9e 7c    .9..9e...l..v..|
+00848   d7 d6 75 fb 8b 65 a0 af  a5 4a de fb 5c 2b 78 6f    ..u..e...J..\+xo
+00864   f6 48 76 06 01 a2 f1 33  a0 e9 51 c1 b1 f4 db 95    .Hv....3..Q.....
+00880   a7 39 a7 53 16 ae b3 2e  f8 48 df 1c 6e 09 02 9c    .9.S.....H..n...
+00896   e4 83 b8 85 2e d6 14 af                             ........
+
+Packet number 33:
+IPv4 packet
+       From: 20.50.201.204
+         To: 192.168.1.8
+   Protocol: TCP
+   Src port: 443
+   Dst port: 58604
+
+Packet number 34:
+IPv4 packet
+       From: 20.50.201.204
+         To: 192.168.1.8
+   Protocol: TCP
+   Src port: 443
+   Dst port: 58604
+   Payload (105 bytes):
+00000   17 03 03 00 64 00 00 00  00 00 00 00 08 12 a3 65    ....d..........e
+00016   e5 3c 26 26 e7 56 ad 1d  70 40 e6 0c 7a 25 57 85    .<&&.V..p@..z%W.
+00032   37 2a cf 15 b2 50 a3 5c  50 ff c1 0a bd c4 13 d5    7*...P.\P.......
+00048   b7 2f 2f 08 91 57 3e 0d  ca de ee 68 d5 fb 3d 0c    .//..W>....h..=.
+00064   de a4 54 81 ca 04 55 2d  b9 0c c1 7a 60 27 37 eb    ..T...U-...z`'7.
+00080   9f 48 ca c4 9d 1d a2 8f  ba 26 94 44 81 02 f6 f7    .H.......&.D....
+00096   87 13 12 51 ec aa 81 6b  0f                         ...Q...k.
+
+Packet number 35:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+
+Packet number 36:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (42 bytes):
+00000   17 03 03 00 25 00 00 00  00 00 00 00 10 26 76 dd    ....%........&v.
+00016   4c 45 74 93 a3 7d e4 8b  9a c1 14 40 db 3e 93 0d    LEt..}.....@.>..
+00032   cb 54 9a 97 97 d9 5d 3d  49 02                      .T....]=I.
+
+Packet number 37:
+IPv4 packet
+       From: 192.168.1.8
+         To: 192.168.1.1
+   Protocol: UDP
+
+udp wip
+
+Packet number 38:
+ARP packet
+
+Packet number 39:
+ARP packet
+
+Packet number 40:
+IPv6 packet
+       From: 2401:4900:1f27:770c::1
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: unknown
+
+Packet number 41:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2401:4900:1f27:770c::1
+   Protocol: unknown
+
+Packet number 42:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2600:140f:3:c96::11a6
+   Protocol: TCP
+   Src port: 14538
+   Dst port: 51725
+
+Packet number 43:
+IPv4 packet
+       From: 20.50.201.204
+         To: 192.168.1.8
+   Protocol: TCP
+   Src port: 443
+   Dst port: 58604
+
+Packet number 44:
+IPv4 packet
+       From: 192.168.1.1
+         To: 192.168.1.8
+   Protocol: UDP
+
+udp wip
+
+Packet number 45:
+IPv4 packet
+       From: 192.168.1.8
+         To: 192.168.1.1
+   Protocol: UDP
+
+udp wip
+
+Packet number 46:
+IPv6 packet
+       From: 2600:140f:3:c96::11a6
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: TCP
+   Src port: 55663
+   Dst port: 8300
+
+Packet number 47:
+IPv4 packet
+       From: 192.168.1.1
+         To: 192.168.1.8
+   Protocol: UDP
+
+udp wip
+
+Packet number 48:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 49:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 50:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 51:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 52:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 53:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 54:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 55:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 56:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 57:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 58:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 59:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 60:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 61:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 62:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 63:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 64:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 65:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 66:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 67:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 68:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 69:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 70:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 71:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 72:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 73:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 74:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 75:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 76:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 77:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 78:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 79:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 80:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 81:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 82:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 83:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 84:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 85:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 86:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 87:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 88:
+IPv6 packet
+       From: 2606:4700:83b0:308a:33b:502:5137:fadd
+         To: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+   Protocol: UDP
+
+Packet number 89:
+IPv6 packet
+       From: 2401:4900:1f27:770c:65f3:e598:74c1:1900
+         To: 2606:4700:83b0:308a:33b:502:5137:fadd
+   Protocol: UDP
+
+Packet number 90:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (124 bytes):
+00000   17 03 03 00 77 00 00 00  00 00 00 00 11 7f 16 6a    ....w..........j
+00016   60 f7 41 ac f5 c4 e0 6f  28 41 c5 fa b0 5f 04 e4    `.A....o(A..._..
+00032   f0 50 68 62 c0 42 12 5e  a2 10 cc a9 69 f4 ae a7    .Phb.B.^....i...
+00048   06 11 e6 2c 7c 08 32 b6  ba 1a 5d 61 26 45 40 51    ...,|.2...]a&E@Q
+00064   9d aa cc 65 6c ae 62 64  01 78 3f c8 5b 11 17 58    ...el.bd.x?.[..X
+00080   a1 40 11 c6 70 3f 5b ac  63 81 5d 3d 65 a5 21 61    .@..p?[.c.]=e.!a
+00096   f5 57 ba ef 73 38 8a d2  31 e7 42 ac 0b b2 d6 f7    .W..s8..1.B.....
+00112   f5 14 7b bf 9d ef a0 72  55 3d a5 e3                ..{....rU=..
+
+Packet number 91:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (1400 bytes):
+00000   17 03 03 11 d6 00 00 00  00 00 00 00 12 30 19 32    .............0.2
+00016   42 45 54 ca 6d 11 fb 56  f1 4d 52 7b c9 73 f7 a4    BET.m..V.MR{.s..
+00032   40 2e 40 6b 67 80 2b d2  39 c0 39 5d 9e 9c 5b c9    @.@kg.+.9.9]..[.
+00048   91 ad b3 3e e6 1a 6a 20  21 e2 01 55 3d d4 b9 90    ...>..j !..U=...
+00064   70 99 7f a3 c8 4d e2 53  da a9 5b 09 95 3d 45 0f    p....M.S..[..=E.
+00080   fe f9 1c c0 39 ec 0d 90  6e 70 c3 eb 9c d6 f9 f1    ....9...np......
+00096   d7 d2 59 64 3b b6 35 92  65 94 30 c6 79 49 57 f5    ..Yd;.5.e.0.yIW.
+00112   e0 f1 c5 8b 7d bf 8a 8b  24 69 f9 1d fd 0d 89 b3    ....}...$i......
+00128   69 40 1b 43 4f 6e 7c c6  a3 20 3f eb 5e 1d 13 ca    i@.COn|.. ?.^...
+00144   32 b2 37 a8 90 8b ff 7d  52 0a 7a bb 06 99 f0 3a    2.7....}R.z....:
+00160   d7 99 3a 6a 66 ba e1 45  66 3c 4b 76 aa 20 fa d5    ..:jf..Ef<Kv. ..
+00176   45 16 80 5f ae 12 8a 9a  39 a9 92 ed 6e e6 af 66    E.._....9...n..f
+00192   b7 de db fe 44 8f 67 06  d4 ca 05 9a 3b 9d 82 3a    ....D.g.....;..:
+00208   1a 6b 92 ce 3d c1 8e a8  7f 9a 31 eb e0 6e f5 51    .k..=.....1..n.Q
+00224   0e c2 48 23 42 00 80 3a  12 de 42 09 89 06 a5 46    ..H#B..:..B....F
+00240   3f e1 b8 bc 4c 2f 5a 45  19 64 79 fb b3 59 de 7f    ?...L/ZE.dy..Y..
+00256   df e7 25 02 ee fd a9 50  07 5d a1 97 80 86 01 b0    ..%....P.]......
+00272   d9 cc 4f b1 d9 c6 3a 85  ae ee e7 48 cb ba 2e ef    ..O...:....H....
+00288   66 2c d2 bc 55 30 1f 7e  ed c1 8f 23 f6 33 1a 6e    f,..U0.~...#.3.n
+00304   a9 97 c4 d9 9f b1 af 3d  d8 96 77 3f bd f8 df c6    .......=..w?....
+00320   ae 3d 04 23 8a 93 55 71  e2 12 72 e6 c3 0b 67 6b    .=.#..Uq..r...gk
+00336   79 01 aa 3b 20 e0 ff 0a  c2 f5 01 ca ca 9a e0 a7    y..; ...........
+00352   c8 42 64 27 05 52 96 b3  a2 4c 6d 37 75 23 b4 c4    .Bd'.R...Lm7u#..
+00368   67 53 42 19 3f fc a4 8b  09 5b 22 b8 ad d8 02 a0    gSB.?....[".....
+00384   05 09 30 25 d6 02 7b 81  68 2d d8 4d 97 77 08 57    ..0%..{.h-.M.w.W
+00400   27 6c 45 80 15 bb 31 fa  75 14 eb 46 7b 18 4d 09    'lE...1.u..F{.M.
+00416   84 89 2c 9a b0 d9 70 d6  75 e5 1d 8f dd 18 32 70    ..,...p.u.....2p
+00432   5c 16 0d 7d df 46 0c 21  ed 42 7d 1f 16 9a 48 a5    \..}.F.!.B}...H.
+00448   57 38 5b ec b3 5b 8a 2b  ec 3d 8f 36 ed 95 11 da    W8[..[.+.=.6....
+00464   ce 68 9e 4e 70 e6 c3 8a  e2 84 53 9a c1 65 d9 96    .h.Np.....S..e..
+00480   d8 0f eb 3c 18 68 6c bd  46 bd b9 8a 4c 04 27 5a    ...<.hl.F...L.'Z
+00496   c0 6a 7a be a2 b0 8c 5c  27 c0 5f 93 20 69 fc 8e    .jz....\'._. i..
+00512   10 76 33 49 4b 8f 29 19  ad ab 30 8a 46 9f 84 27    .v3IK.)...0.F..'
+00528   50 36 56 78 cc f9 d2 9b  50 b5 f3 1b af 69 be 08    P6Vx....P....i..
+00544   3c cd f2 ee 6d 87 01 11  32 54 78 01 0d 2b d4 7f    <...m...2Tx..+..
+00560   89 73 7c ff ed ae 50 16  bb b0 1e 20 f6 c1 12 72    .s|...P.... ...r
+00576   56 8a 60 30 80 6d f8 99  dd a9 13 9d 2a ef 08 60    V.`0.m......*..`
+00592   fc e2 50 91 91 30 22 86  ff b6 0c d0 c4 bd 2e fc    ..P..0".........
+00608   e4 3e e1 31 60 d9 c6 dc  50 c4 e1 bb 46 d8 f9 56    .>.1`...P...F..V
+00624   44 48 31 4a 00 26 58 c5  7a 72 74 35 0a c5 81 30    DH1J.&X.zrt5...0
+00640   b7 ba 98 c8 47 d4 80 0c  2d 29 5a 26 ab ea d8 4b    ....G...-)Z&...K
+00656   e7 49 5e 01 8a 58 3a fb  57 b0 51 b5 9a e8 b9 e7    .I^..X:.W.Q.....
+00672   95 f9 83 8a 6c fe ad 71  00 91 d3 9e 99 2a 4f 03    ....l..q.....*O.
+00688   5b cc 5a a2 3d 20 ce 74  c1 ad ba 9b 4b ed c0 7b    [.Z.= .t....K..{
+00704   96 02 44 5e 8f ee ec f6  3a 7d a5 8b 13 95 26 5c    ..D^....:}....&\
+00720   c4 79 fe 6b 9d 2a 2c 39  9e 43 3e a2 1b aa ec 0f    .y.k.*,9.C>.....
+00736   38 73 bf 41 76 6b 82 15  b7 9a 94 69 f2 03 a0 24    8s.Avk.....i...$
+00752   16 c8 fc c3 c1 64 1e 8b  29 7a 2d e0 f2 9d 30 af    .....d..)z-...0.
+00768   f0 b1 8a a9 88 35 c8 c1  b2 94 c7 2a 20 45 dc 9d    .....5.....* E..
+00784   6d 9a 17 83 e4 bf b3 44  52 ae 11 cb 84 ee 14 28    m......DR......(
+00800   09 38 18 18 83 8e 6e d3  33 50 e7 8e a3 33 df 0f    .8....n.3P...3..
+00816   e0 99 f4 1c 55 a1 a5 56  e3 c9 17 23 63 1b df 25    ....U..V...#c..%
+00832   37 86 51 da 91 de 4c 7f  fb ff d6 3a 47 04 a1 a9    7.Q...L....:G...
+00848   71 08 ff 32 f0 15 78 e6  ef 9f b6 ff 7e 5a 55 a3    q..2..x.....~ZU.
+00864   18 2d 62 e3 9c 7a 76 4f  54 dc ca 20 41 87 52 75    .-b..zvOT.. A.Ru
+00880   c1 cb bb ec 4e d7 f7 dc  71 d0 cd 68 2c 0c f0 cc    ....N...q..h,...
+00896   74 13 e2 d8 dc 89 a4 f6  98 56 9d 4f 13 c4 4a 5b    t........V.O..J[
+00912   e8 a1 76 c9 57 fa 61 cc  99 e3 5c a9 4f bb 61 ac    ..v.W.a...\.O.a.
+00928   80 65 a4 bc 99 cc 3c b4  ff 62 c8 7e d7 79 2e ab    .e....<..b.~.y..
+00944   97 3b 67 7b e6 8b 3b 2e  55 33 51 5a 31 21 54 6d    .;g{..;.U3QZ1!Tm
+00960   ea ec bf 2a 79 2a 51 d3  95 02 37 54 6c d1 a8 0f    ...*y*Q...7Tl...
+00976   9e 1c b7 94 82 a3 7f e2  20 db 5b a2 21 6a 15 80    ........ .[.!j..
+00992   d2 2e 5d cd 26 84 73 fa  d3 ea c3 29 81 97 ba 15    ..].&.s....)....
+01008   e8 fe d9 86 29 cf ca c7  1d 1b 8b 95 82 fe 3f c2    ....).........?.
+01024   ce 63 de 5a 82 5a 54 2c  70 3b 6b ab 67 41 52 c5    .c.Z.ZT,p;k.gAR.
+01040   35 ea a4 ba 08 da d9 43  92 ad 82 f4 5c 41 99 a9    5......C....\A..
+01056   38 b2 f1 40 be 35 61 dc  8a d3 d8 b5 75 c9 90 78    8..@.5a.....u..x
+01072   a8 65 0d 18 43 bf a5 fc  86 6b 9e d0 ed b4 9d 4e    .e..C....k.....N
+01088   da 52 e6 2f 87 c4 8c 84  4b d9 a8 b4 1c 3b 58 19    .R./....K....;X.
+01104   c1 dc 62 20 5b a8 ac 4c  0b 4d 1b c0 90 eb 70 a7    ..b [..L.M....p.
+01120   a8 b5 8a ce 1c c9 09 40  15 1a 15 21 34 0d b6 d2    .......@...!4...
+01136   e9 0e 3b 7b a5 ed 82 aa  19 71 f7 0a 33 58 27 93    ..;{.....q..3X'.
+01152   f7 b9 bb 28 f3 33 c3 0a  c4 34 97 35 42 1c f0 a4    ...(.3...4.5B...
+01168   68 3a d4 0c a1 10 a0 00  92 6f c9 af e9 d1 55 0f    h:.......o....U.
+01184   8b 0a 24 3c 69 68 11 75  9c 8c 13 97 14 1e 10 90    ..$<ih.u........
+01200   95 a8 b8 e1 af 3e 76 2b  6f 5f 59 d9 c3 92 02 98    .....>v+o_Y.....
+01216   4f 4b f6 fe ca d8 97 79  ef 01 12 04 1e bb 2c bf    OK.....y......,.
+01232   51 c7 20 95 3a 82 fc cd  fb 42 62 fd 5a 49 fb dd    Q. .:....Bb.ZI..
+01248   ea 99 a3 fb 70 6e 60 7f  52 a1 14 93 2e b0 8a 22    ....pn`.R......"
+01264   82 33 fc 4c 18 e3 38 22  e4 d8 6a b7 ee 41 98 4c    .3.L..8"..j..A.L
+01280   df 3d 0e cb 8c d8 76 37  2f 56 16 cc 43 10 75 19    .=....v7/V..C.u.
+01296   d6 8b 9f 96 3c 7e 8d e5  ab fe 00 5b 14 46 40 ea    ....<~.....[.F@.
+01312   bb bf 63 fc 14 47 1d b7  8d f3 01 4d b2 5d 0d d0    ..c..G.....M.]..
+01328   d7 93 a5 fb 18 74 30 43  c5 86 28 26 5d 5c e6 92    .....t0C..(&]\..
+01344   99 47 ec e6 e2 d8 92 38  e9 a5 f9 c3 50 ef 9b b9    .G.....8....P...
+01360   14 f1 75 5a 1f 24 f3 0c  be 66 b8 cf 8c d1 cc 12    ..uZ.$...f......
+01376   e4 98 d8 96 b3 26 51 49  22 6b 46 ff 75 8f 36 20    .....&QI"kF.u.6 
+01392   76 0a e5 14 c7 08 c8 b5                             v.......
+
+Packet number 92:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (1400 bytes):
+00000   7e 00 68 3e fb 6e 96 34  86 08 35 85 57 f1 5d ac    ~.h>.n.4..5.W.].
+00016   c8 74 f6 a7 58 cf 33 85  88 40 93 a2 99 b4 06 07    .t..X.3..@......
+00032   f7 f4 84 dd 9f a6 f1 23  97 3e 6d 31 3e 9e 56 f6    .......#.>m1>.V.
+00048   90 c7 ca 81 a9 9e 9e 11  42 be d9 c5 de 68 81 16    ........B....h..
+00064   68 c2 ab ea 31 c3 4e 04  07 8d d8 60 b0 0f 59 4b    h...1.N....`..YK
+00080   21 51 20 99 d1 46 3d 8a  b2 3c 04 47 cd e9 91 fc    !Q ..F=..<.G....
+00096   fc 08 8f 63 34 0e 24 ad  1f 3f 15 1a 3b 71 cf 56    ...c4.$..?..;q.V
+00112   6b ff e0 89 7e 1e 34 48  f2 92 3e bc ca 11 f3 97    k...~.4H..>.....
+00128   ff 7a cb cc f7 6e dc f6  f0 ae a7 00 96 b3 b0 90    .z...n..........
+00144   1f e4 0f bc eb 2b cd e1  d8 0b 27 2c 5b b6 2c 21    .....+....',[.,!
+00160   27 5c 9b ab 32 8c 97 c5  2b 1d 04 2d fc b6 89 45    '\..2...+..-...E
+00176   a1 d1 1f b1 69 92 5a 82  25 da 54 88 65 73 c6 7f    ....i.Z.%.T.es..
+00192   fc c1 7b 83 64 21 7a 31  34 d7 1e 7f d5 7c 96 f4    ..{.d!z14....|..
+00208   c3 7b 46 99 c3 1a 2b 15  22 cc 11 1c 4e f6 a1 50    .{F...+."...N..P
+00224   fa 1e e3 57 28 63 35 d0  5d 9d fc 4a 35 7b 43 21    ...W(c5.]..J5{C!
+00240   2a e8 d8 5a a2 72 74 ab  fa 06 42 8b be 3b 24 b1    *..Z.rt...B..;$.
+00256   c1 a2 26 a0 73 17 4e f3  5a 60 57 71 d1 1c b5 a3    ..&.s.N.Z`Wq....
+00272   04 5b 33 82 1d e6 ed ad  9c 43 e7 aa be 07 ea 6d    .[3......C.....m
+00288   6b 45 dd df 46 7f 31 02  71 bf 7a 8d 04 79 a2 9a    kE..F.1.q.z..y..
+00304   a1 f3 f8 4d 7d ff e2 66  b2 6c 98 74 e4 8e 9b 0d    ...M}..f.l.t....
+00320   f1 d5 a6 45 a4 1c 91 52  7f a4 76 24 64 f2 ed ff    ...E...R..v$d...
+00336   98 8e ec d0 9b 4a 3c b4  ff 5c 71 01 d7 9f 0c 19    .....J<..\q.....
+00352   1e d3 55 90 3c 1c 99 50  85 97 0d 9b 10 14 32 22    ..U.<..P......2"
+00368   dc 61 fe ce 10 d1 9f 37  13 58 3e 9a bf 4b c7 25    .a.....7.X>..K.%
+00384   1f 2b 68 7c 4a 12 d6 c0  27 38 6f 3b e3 2c 06 32    .+h|J...'8o;.,.2
+00400   bb ba 29 69 be 25 5a c5  3c 61 44 8b f9 b3 77 45    ..)i.%Z.<aD...wE
+00416   e9 cf de 38 ee 6b d9 87  7d b1 a6 42 9a 86 1f 3d    ...8.k..}..B...=
+00432   6a 7c df c1 5a 18 54 d5  e0 83 e7 83 1d d6 40 da    j|..Z.T.......@.
+00448   b0 27 bc c6 df f5 5c f1  23 f3 83 45 30 ad 5a 0a    .'....\.#..E0.Z.
+00464   6d 65 a8 d1 e5 59 c2 99  7b 06 84 ee b5 c5 b2 ee    me...Y..{.......
+00480   7f d9 be de a4 bb b2 26  7a a6 41 12 0b b3 76 7c    .......&z.A...v|
+00496   90 8b 08 3b 43 b5 8d c9  f5 58 ed b5 48 c9 9f 08    ...;C....X..H...
+00512   8d 8b 0b 83 2f 07 ba c6  f1 d4 78 fe c4 13 c8 c1    ..../.....x.....
+00528   ee 23 ec 3a 89 8f 7b 44  aa d7 ad 1a 90 15 1d 4c    .#.:..{D.......L
+00544   4f 32 e0 5c be ef 56 6d  a8 3a 42 d8 83 09 38 4a    O2.\..Vm.:B...8J
+00560   62 e5 28 cb 76 39 fe af  fe be 63 7d e1 79 93 db    b.(.v9....c}.y..
+00576   04 b9 c6 13 c1 fe 8b 29  cf 54 e5 1b b4 ed 0c 78    .......).T.....x
+00592   ff 7c 1a 75 59 45 9b ae  58 45 9d 21 eb 9c b6 bf    .|.uYE..XE.!....
+00608   f6 1c b3 e9 96 c6 64 4d  84 94 8d 01 74 73 0d 3b    ......dM....ts.;
+00624   6b 9c 44 d2 32 ec af 21  82 b8 2c f2 ee 82 7d 02    k.D.2..!..,...}.
+00640   ed 3d 27 a5 98 b2 3d b3  8f 61 31 c6 13 e8 0e d1    .='...=..a1.....
+00656   6c f4 36 d4 4f 45 a5 44  af 7c c8 07 f9 71 6e 7d    l.6.OE.D.|...qn}
+00672   dc 59 a2 70 06 ce d2 39  7c fb c9 f2 b8 1e fc d1    .Y.p...9|.......
+00688   7c 4b f2 ac e8 ff 8a 4f  f7 20 66 84 97 2e b2 26    |K.....O. f....&
+00704   64 cb f1 64 7f 0e c5 b9  75 82 8f 86 ab e7 09 8a    d..d....u.......
+00720   7d ad a4 4d a3 aa 01 5e  64 47 d3 61 09 9b 91 9d    }..M...^dG.a....
+00736   4e 76 73 3f 0b c4 47 07  2c d1 16 5b 81 89 f0 f9    Nvs?..G.,..[....
+00752   36 bd 42 28 9e c3 bf f9  8e 87 99 c4 c4 ba 79 27    6.B(..........y'
+00768   1b 38 49 f0 16 e8 14 e9  4d 86 18 56 8e 92 47 97    .8I.....M..V..G.
+00784   6b d7 48 3a 4e 43 bc 54  6f 23 7e 89 23 59 be 20    k.H:NC.To#~.#Y. 
+00800   1f c7 4e 67 67 c5 96 46  28 7c 47 23 be e1 36 8c    ..Ngg..F(|G#..6.
+00816   d4 bb 4d 27 2d 95 b5 29  61 78 77 6c bc ce 66 a0    ..M'-..)axwl..f.
+00832   1c df 73 ec b9 c3 97 61  92 50 d1 1d af 0e e2 4a    ..s....a.P.....J
+00848   ca 6f 63 12 d2 33 79 92  d0 4d 46 90 58 40 1f d8    .oc..3y..MF.X@..
+00864   97 c9 59 f3 1b d1 2d 4f  bb dd 88 fb 80 ec 05 5e    ..Y...-O.......^
+00880   8c 59 94 e5 85 1c a3 94  f4 88 51 48 c8 ba e7 a6    .Y........QH....
+00896   50 01 90 a8 8d a8 f6 fb  b5 39 b1 b3 12 77 ea 7e    P........9...w.~
+00912   61 14 a2 b8 00 99 6d 89  75 85 60 81 96 64 9a 41    a.....m.u.`..d.A
+00928   7e e2 29 95 de fc 58 b8  b5 ba b7 f4 36 43 93 d2    ~.)...X.....6C..
+00944   94 86 75 4e ea 3f d0 23  73 8d fd f0 15 22 79 a7    ..uN.?.#s...."y.
+00960   46 28 6e 69 4b 0e c5 67  f9 0b a7 a4 e4 a9 8c c8    F(niK..g........
+00976   d4 91 2a 3c c8 fb 10 10  9a 45 78 a9 bc 0a 45 f7    ..*<.....Ex...E.
+00992   c2 7e 1f 9f 3e df 80 98  72 23 1a d5 fe 45 ff c1    .~..>...r#...E..
+01008   8e 54 b0 7e 66 bb 26 36  bd 2e e2 a0 d6 14 b8 54    .T.~f.&6.......T
+01024   1b d2 53 ba bd 34 07 5a  3a aa d4 f7 60 95 8d d7    ..S..4.Z:...`...
+01040   89 96 04 5c ea 9a 9a 26  97 d8 40 b1 17 92 09 47    ...\...&..@....G
+01056   9e 37 7a c1 29 78 a4 81  e3 11 99 8a b4 52 1f 51    .7z.)x.......R.Q
+01072   cd 97 4a 64 ca 6a d6 db  f4 69 a3 7f 50 c6 22 d9    ..Jd.j...i..P.".
+01088   7e ee 1e 98 10 e0 87 25  01 27 17 8c 79 bb 9b d0    ~......%.'..y...
+01104   e3 6c ef 7d 79 c1 dc 00  c7 5d 13 6d cc 07 92 0e    .l.}y....].m....
+01120   aa c8 4f 4b f8 8e 3a 87  35 73 9e f4 5a 0a 9e 7a    ..OK..:.5s..Z..z
+01136   3c 5f e8 fc cf 89 b1 6c  c5 7f 84 f0 21 43 13 64    <_.....l....!C.d
+01152   26 59 61 cf ce ca 11 a6  34 9f 0a 8b d3 e0 1f 7a    &Ya.....4......z
+01168   11 eb e1 f8 2e 3f ce 67  c0 12 5e 5e 76 fa 13 8c    .....?.g..^^v...
+01184   44 21 a5 21 ea c2 6d cc  5a de cd 31 48 c3 d9 94    D!.!..m.Z..1H...
+01200   ca 4e e2 47 d4 00 d1 80  b3 0f 5c 6c aa 04 c2 01    .N.G......\l....
+01216   18 5a 4d f4 c0 b7 13 13  a1 fc d3 65 63 28 35 cc    .ZM........ec(5.
+01232   67 2f 79 1b ba af c4 6e  92 1b 89 ea 7d 33 f5 9f    g/y....n....}3..
+01248   a5 ea 64 5d d4 91 16 34  9b 10 81 4b d8 09 a9 b4    ..d]...4...K....
+01264   31 cc de 84 c3 63 e5 bb  f7 46 04 ac 3e f0 8a a0    1....c...F..>...
+01280   9c 36 67 eb 0a cb 99 28  77 aa 8c b2 ee 08 9f 72    .6g....(w......r
+01296   08 f1 80 1f ca a9 09 c4  b3 af 9e 70 98 b0 01 a6    ...........p....
+01312   1f 40 e0 f3 8c 90 90 1a  c1 05 2c 40 b3 cf fe f8    .@........,@....
+01328   fc 8f a5 a2 07 82 40 b9  86 39 83 e5 28 3e 9e d6    ......@..9..(>..
+01344   2b 56 16 20 42 1f 15 7f  61 d6 24 80 79 89 d9 9b    +V. B...a.$.y...
+01360   2a bb b9 dd a4 f2 94 1c  2a 93 46 e0 78 4c eb d9    *.......*.F.xL..
+01376   09 87 d2 90 b6 9e 4c e1  ea 1e f3 4c 1f 8f d9 b7    ......L....L....
+01392   d1 dc c9 26 6e 27 37 52                             ...&n'7R
+
+Packet number 93:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (1400 bytes):
+00000   60 57 2c 88 26 9d 1a 6a  8e 33 95 61 ed b2 0b e6    `W,.&..j.3.a....
+00016   61 bc 40 b3 f2 5e 23 cd  f2 af 4a d6 46 a3 08 9d    a.@..^#...J.F...
+00032   1d 65 a0 81 7e 52 f7 a3  4b fb 77 be db e6 09 13    .e..~R..K.w.....
+00048   23 0d be ab ea 5c e4 79  ef 71 de 6a 18 4b 41 75    #....\.y.q.j.KAu
+00064   34 1c 81 47 15 bb 6c 75  df 02 87 4e 09 a6 18 52    4..G..lu...N...R
+00080   65 fd 29 19 48 5a dc b3  be 49 fe f7 80 7c f3 86    e.).HZ...I...|..
+00096   b1 77 9d a9 f2 3f 7e 49  f7 8d 0a 55 b1 aa 66 7a    .w...?~I...U..fz
+00112   36 21 f3 53 98 5f 0e 31  70 29 59 86 81 8b 7d 5b    6!.S._.1p)Y...}[
+00128   4d 21 0e 4f 81 07 4b a3  24 87 5b 1f 40 fa 5c a6    M!.O..K.$.[.@.\.
+00144   06 8c cd 1b 81 a2 f4 f9  47 c9 e0 e4 53 fc 76 89    ........G...S.v.
+00160   c5 04 22 25 a4 dd a9 26  44 0e cb ff 31 c7 64 28    .."%...&D...1.d(
+00176   1f 21 41 37 e1 c0 a3 44  6e c7 0a 46 f2 b2 fe 0f    .!A7...Dn..F....
+00192   0c e1 43 d3 07 a4 47 e2  57 78 a5 78 22 3a 89 25    ..C...G.Wx.x":.%
+00208   1c 27 89 c2 78 6e dd 1f  e6 55 21 99 e0 22 a0 6d    .'..xn...U!..".m
+00224   3e 0e 98 c8 8d 62 57 a3  ef ed 0b 01 52 3f a8 b3    >....bW.....R?..
+00240   fc b1 a6 7d 42 ab 08 ba  7c 53 73 14 b3 18 20 8b    ...}B...|Ss... .
+00256   09 8d 03 3c 44 df be 78  27 2c 29 69 ff de 7c ba    ...<D..x',)i..|.
+00272   3b 5f 87 4c 8a d2 07 02  97 55 c4 bb e0 91 54 3c    ;_.L.....U....T<
+00288   89 30 01 09 21 b6 1c 23  06 8d 8f 3b cc 40 e0 d1    .0..!..#...;.@..
+00304   21 14 3e b5 0c ea 77 73  2b d0 13 93 e9 be 66 8f    !.>...ws+.....f.
+00320   66 39 7f dd 62 78 7d 2d  34 d7 70 9f fb d5 54 23    f9..bx}-4.p...T#
+00336   65 b9 87 ce c1 b2 cb bb  68 aa 79 e3 55 39 dd cd    e.......h.y.U9..
+00352   b0 95 3d 9d 8e 44 2d ca  e0 91 30 45 94 9f a2 99    ..=..D-...0E....
+00368   e6 ba db 9b 09 95 bd 46  28 c8 06 48 41 d2 4b 2e    .......F(..HA.K.
+00384   0d 0e 06 a6 da 15 51 5c  77 cb 2a 62 b7 4c 80 63    ......Q\w.*b.L.c
+00400   81 07 74 25 3a 25 02 7c  b4 a1 d8 fc e3 00 cf 8e    ..t%:%.|........
+00416   a1 ee 70 b1 80 13 a5 88  29 3a d8 6f 0e 9e e5 2c    ..p.....):.o...,
+00432   e9 a6 18 9f b0 5e ca 09  04 26 7b 62 d6 d4 15 df    .....^...&{b....
+00448   e5 cb cd 20 5d 39 58 ee  b6 39 a0 e7 d1 4e e0 9a    ... ]9X..9...N..
+00464   4a 36 87 b6 d3 30 03 4c  2a 84 58 42 67 ab e9 1e    J6...0.L*.XBg...
+00480   44 7f 57 f5 92 27 28 e7  c6 ad 16 b1 a9 e8 d4 b1    D.W..'(.........
+00496   d7 38 3a 3b b0 fd 6a e7  6b 05 68 1c 3b 24 5a a4    .8:;..j.k.h.;$Z.
+00512   01 a4 1a 90 d6 eb 33 6e  ab d5 a1 bd 87 57 b4 5b    ......3n.....W.[
+00528   98 47 41 ab e8 22 d2 66  b7 88 d0 25 ce f5 4f 99    .GA..".f...%..O.
+00544   d2 8b ef 1e e2 bc 51 3b  28 24 45 57 2b 6c cc 8e    ......Q;($EW+l..
+00560   88 94 84 6c 6e 33 b7 92  14 f7 58 f1 8f 39 2b 4b    ...ln3....X..9+K
+00576   93 eb b5 fc 90 45 ba 4f  b7 75 22 a4 55 d1 d2 30    .....E.O.u".U..0
+00592   22 46 73 4a a6 56 d9 80  2c 64 ce 5a 27 bd f1 7d    "FsJ.V..,d.Z'..}
+00608   37 dc 89 89 bd 51 5f 15  2b bd c9 2c e3 7d 19 aa    7....Q_.+..,.}..
+00624   44 ea 3f 6a cc 0d d0 b7  b4 df 35 10 fb 87 47 6c    D.?j......5...Gl
+00640   61 c5 ef 5b bf 03 ee 79  42 ae 0f 09 78 c9 8c e0    a..[...yB...x...
+00656   40 83 24 df 27 be de cd  2e 91 3e 26 ba 5c 36 a8    @.$.'.....>&.\6.
+00672   03 8f 1a bb da b0 43 56  a6 fa b0 9d b9 07 1a 52    ......CV.......R
+00688   15 d2 83 93 47 ca c1 4f  45 48 ae a9 3d df 46 9b    ....G..OEH..=.F.
+00704   d4 4d af 0e 89 49 14 44  8b 52 74 fd a3 7d 47 da    .M...I.D.Rt..}G.
+00720   dd e7 9f 9e 95 9f 0a 2b  67 9c 8b 60 f6 f6 f1 44    .......+g..`...D
+00736   ca 58 44 64 77 93 06 cb  5e 51 81 02 bd da ae 8d    .XDdw...^Q......
+00752   27 c8 2d 54 01 43 61 f7  98 14 3c 62 e7 24 ba 56    '.-T.Ca...<b.$.V
+00768   c6 aa b9 ca a3 7b ba 43  4f 34 82 9d b4 30 e7 a8    .....{.CO4...0..
+00784   0e 5a af 20 6c a4 7d a5  6c df 79 16 8d 1d 04 2d    .Z. l.}.l.y....-
+00800   b4 5e 5a 78 45 15 f6 a9  72 cc 26 8e 1f d9 bb 1c    .^ZxE...r.&.....
+00816   b3 8a d0 87 97 8e e9 fd  9e d7 07 3b 57 de 1b 70    ...........;W..p
+00832   4d 77 f5 da 5b 15 7b e1  73 ea 73 64 3a 91 ce 1e    Mw..[.{.s.sd:...
+00848   7e 9f e4 71 53 ee 47 c5  33 5b b6 b3 6b 95 da db    ~..qS.G.3[..k...
+00864   1b fb 95 8f f6 15 2c 3d  ed 90 20 0b dc 70 a9 ec    ......,=.. ..p..
+00880   a3 cd 8c 9f 3b e9 7b 94  8f 1c bc 58 f8 31 45 c8    ....;.{....X.1E.
+00896   1c 7e b3 38 b7 65 8f d2  3e 54 f5 1d 02 19 a0 f9    .~.8.e..>T......
+00912   c8 d8 a7 ea 53 b7 e4 25  cc 5a e9 62 54 c3 0c 45    ....S..%.Z.bT..E
+00928   0e 5c 2c 2a 9a 20 3a 60  a9 8d 2f e2 57 44 87 15    .\,*. :`../.WD..
+00944   e0 80 82 a4 c5 51 cf e3  17 5f 8a 6d 64 e6 00 26    .....Q..._.md..&
+00960   10 7b c4 cf 57 9a d4 25  cb 56 df 7e 49 73 06 b9    .{..W..%.V.~Is..
+00976   9c 4f de 3e fd b1 4c 4d  f0 73 7e a8 90 7e d6 4c    .O.>..LM.s~..~.L
+00992   c7 e6 a0 4b 8a 06 22 85  c2 76 23 69 74 99 cc 07    ...K.."..v#it...
+01008   d0 8b 84 3e 64 a4 d5 a9  90 b6 da 73 fc 3c 97 74    ...>d......s.<.t
+01024   b0 df 4a 38 b4 87 de db  42 a8 19 7b 03 83 d4 66    ..J8....B..{...f
+01040   81 9b 1c e0 a0 ad d7 b9  46 0d 34 e8 16 55 08 1b    ........F.4..U..
+01056   41 fc 85 c1 b6 73 c9 27  e7 82 14 1a 75 59 2c 69    A....s.'....uY,i
+01072   e1 55 9c 1e 95 a3 e0 69  57 36 88 0a f6 05 61 48    .U.....iW6....aH
+01088   82 10 d4 71 94 fe ff de  12 d4 bb 56 ea 39 c2 80    ...q.......V.9..
+01104   74 7b 13 b5 c6 6b 13 b3  07 73 91 3e 3f ca 59 1b    t{...k...s.>?.Y.
+01120   f6 79 f0 ab 59 e7 95 74  15 bd c8 96 3d a5 2e 49    .y..Y..t....=..I
+01136   11 44 91 c8 d6 c9 01 3b  ec 7c 8a b9 22 14 7f 50    .D.....;.|.."..P
+01152   86 24 12 4d b6 8f 21 87  9e d6 96 94 b7 af e7 16    .$.M..!.........
+01168   13 8c 2f 48 48 27 4f 1b  b4 07 15 84 ff e9 93 98    ../HH'O.........
+01184   3a a9 c1 e5 55 55 ac 9a  cc 34 91 15 b2 a5 75 de    :...UU...4....u.
+01200   bb af e3 0a a9 6d 83 d6  02 9f e8 26 f2 49 95 01    .....m.....&.I..
+01216   48 b1 fe c6 e1 15 cd 8f  56 57 bf bd 05 74 0c a7    H.......VW...t..
+01232   7c bc eb 75 aa 11 43 f7  e3 7e 0d ce 25 02 77 ff    |..u..C..~..%.w.
+01248   de a2 b5 01 42 3e df 78  d0 a4 6e 97 65 3d 53 c4    ....B>.x..n.e=S.
+01264   38 f0 da 1b 8d 01 9f b8  83 0d da 9c 57 f5 22 57    8...........W."W
+01280   4f c6 8e e4 43 6c f9 cd  5f 45 5c 05 a1 0d 80 d1    O...Cl.._E\.....
+01296   77 a1 38 8a 66 27 4e a3  e7 d5 d5 bc 36 bf 88 65    w.8.f'N.....6..e
+01312   25 71 53 f4 ce cb fb bb  1a 7c 5c 63 e1 93 60 5e    %qS......|\c..`^
+01328   7b c0 55 39 1d 7e 68 f3  10 ee 5c 54 0f b1 12 e4    {.U9.~h...\T....
+01344   3b b6 80 95 43 69 17 c2  16 7b 07 bf 8e ad 29 99    ;...Ci...{....).
+01360   fc 66 b9 d0 c3 12 04 1c  5a 41 35 8f 16 8a d6 d6    .f......ZA5.....
+01376   d5 9b 73 e0 b7 26 26 0c  02 b9 ad c6 35 9b fe 0b    ..s..&&.....5...
+01392   d8 94 9e 06 c3 1c 26 3e                             ......&>
+
+Packet number 94:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+   Payload (371 bytes):
+00000   25 4b 84 83 06 2b cf eb  d6 16 d9 e9 2a cb d8 e7    %K...+......*...
+00016   7c 0c 3d 80 98 45 75 5c  ec 13 51 79 8d e6 f4 0a    |.=..Eu\..Qy....
+00032   76 12 8a 4d 17 4c 61 1c  41 83 8b 7d 1c 01 f8 2d    v..M.La.A..}...-
+00048   ab ad 26 bd f6 91 ef 1b  26 65 fb 2b 1f e7 72 f8    ..&.....&e.+..r.
+00064   63 9a de c0 17 8c 0a 71  64 51 bc 7e f3 24 ac 62    c......qdQ.~.$.b
+00080   8c ec cf e9 55 e1 14 81  e5 5c 99 a9 36 07 a7 b8    ....U....\..6...
+00096   9d fb cc 84 f4 9a 3e 9e  37 d1 36 62 04 52 26 57    ......>.7.6b.R&W
+00112   72 46 77 55 21 63 f4 8a  40 95 a3 44 87 49 17 4e    rFwU!c..@..D.I.N
+00128   d6 82 70 d3 77 28 91 45  cb 54 c8 b8 86 97 77 9b    ..p.w(.E.T....w.
+00144   1f 24 78 32 df 1f b7 38  89 f9 b5 c6 08 5e 30 20    .$x2...8.....^0 
+00160   e2 5b ed e1 55 79 0d 6a  a3 dd 3e 7f c0 37 29 d7    .[..Uy.j..>..7).
+00176   5a d9 e5 f0 0b bc 56 d9  c8 c4 ed 3a 36 45 97 b6    Z.....V....:6E..
+00192   6e 43 47 d7 f4 fa 01 e6  33 99 05 81 8c c9 01 e4    nCG.....3.......
+00208   e6 59 d4 08 9a fa b6 41  f2 60 9e 58 8c b1 c9 70    .Y.....A.`.X...p
+00224   d4 67 22 18 07 25 1f 97  01 9a 48 84 48 94 9b 2e    .g"..%....H.H...
+00240   0a 1d 17 99 85 e3 ab 7c  81 7e 1a 56 aa 35 f8 1e    .......|.~.V.5..
+00256   2f 6c 05 80 6b 5f e0 7a  48 98 73 07 33 7d c5 cc    /l..k_.zH.s.3}..
+00272   2d f1 73 a2 8e b8 c3 53  d5 dd 1b 5b 74 02 82 26    -.s....S...[t..&
+00288   fc f6 7c 36 7b 16 2d 57  55 26 93 7c 45 7b 1d 29    ..|6{.-WU&.|E{.)
+00304   9a bd 81 ed 38 be 7c 5f  92 1f 2a dc 16 0c 1c ff    ....8.|_..*.....
+00320   58 a2 70 0c 5a 42 37 8f  7c 37 37 df b4 14 81 a3    X.p.ZB7.|77.....
+00336   86 56 a7 cd c5 3f cd e9  6c 60 c0 0c 2d ea 43 9f    .V...?..l`..-.C.
+00352   0b b6 6e e5 d5 5e d7 60  af 2e 11 e5 b1 84 f2 33    ..n..^.`.......3
+00368   6b 9c 82                                            k..
+
+Packet number 95:
+IPv4 packet
+       From: 20.50.201.204
+         To: 192.168.1.8
+   Protocol: TCP
+   Src port: 443
+   Dst port: 58604
+
+Packet number 96:
+IPv4 packet
+       From: 20.50.201.204
+         To: 192.168.1.8
+   Protocol: TCP
+   Src port: 443
+   Dst port: 58604
+
+Packet number 97:
+IPv4 packet
+       From: 20.50.201.204
+         To: 192.168.1.8
+   Protocol: TCP
+   Src port: 443
+   Dst port: 58604
+   Payload (105 bytes):
+00000   17 03 03 00 64 00 00 00  00 00 00 00 09 c0 83 7e    ....d..........~
+00016   85 79 5d 7f 35 ac bc 6e  33 f0 1a 54 78 a1 ca fe    .y].5..n3..Tx...
+00032   4e d1 8a f4 74 ad 25 2a  b5 89 a8 45 e1 e7 31 01    N...t.%*...E..1.
+00048   d6 5e 53 3e 19 63 14 92  8a b8 56 ab 06 c7 a4 75    .^S>.c....V....u
+00064   08 1f cd 29 4a 23 6e e7  e8 b5 cb b0 6a 90 39 d2    ...)J#n.....j.9.
+00080   e2 17 ea e0 73 01 76 4e  9d 91 93 68 da 8b 20 f1    ....s.vN...h.. .
+00096   50 87 72 90 55 1d a8 f4  b6                         P.r.U....
+
+Packet number 98:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58604
+   Dst port: 443
+
+Packet number 99:
+IPv4 packet
+       From: 192.168.1.8
+         To: 20.50.201.204
+   Protocol: TCP
+   Src port: 58616
+   Dst port: 443
+
+Packet number 100:
+IPv4 packet
+       From: 20.50.201.204
+         To: 192.168.1.8
+   Protocol: TCP
+   Src port: 443
+   Dst port: 58616
+
+Capture complete.
